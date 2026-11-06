@@ -78,8 +78,6 @@ class TranslationsKy extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$ky aboutPage = _Translations$aboutPage$ky._(_root);
   @override
-  late final _Translations$donationPage$ky donationPage = _Translations$donationPage$ky._(_root);
-  @override
   late final _Translations$changelogPage$ky changelogPage = _Translations$changelogPage$ky._(_root);
   @override
   late final _Translations$whatsNewPage$ky whatsNewPage = _Translations$whatsNewPage$ky._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$ky extends Translations$aboutPage$en {
   String get packagers => 'Пакеттөөчүлөр';
   @override
   String get translators => 'Котормочулар';
-}
-
-// Path: donationPage
-class _Translations$donationPage$ky extends Translations$donationPage$en {
-  _Translations$donationPage$ky._(TranslationsKy root) : this._root = root, super.internal(root);
-
-  final TranslationsKy _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Кайрымдуулук кылуу';
-  @override
-  String get info =>
-      'LocalSend — бул жарнамасыз, акысыз жана ачык булактуу тиркеме. Эгер сизге жакса, ыктыярдуу тартуу менен анын өнүгүшүн колдой аласыз.';
-  @override
-  String donate({required Object amount}) => '${amount} тартуулоо';
-  @override
-  String get thanks => 'Чоң рахмат!';
-  @override
-  String get restore => 'Сатып алууну калыбына келтирүү';
 }
 
 // Path: changelogPage
@@ -1057,10 +1035,6 @@ class _Translations$settingsTab$other$ky extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Башка';
-  @override
-  String get support => 'LocalSend\'ди колдоо';
-  @override
-  String get donate => 'Кайрымдуулук кылуу';
   @override
   String get privacyPolicy => 'Купуялуулук саясаты';
   @override

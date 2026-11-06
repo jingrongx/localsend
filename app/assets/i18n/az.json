@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Digər",
-      "support": "LocalSend-i dəstəklə",
-      "donate": "İanə et",
       "privacyPolicy": "Məxfilik siyasəti",
       "termsOfUse": "İstifadə şərtləri"
     },
@@ -309,13 +307,6 @@
     "contributors": "Töhfə verənlər",
     "packagers": "Paketləyənlər",
     "translators": "Tərcüməçilər"
-  },
-  "donationPage": {
-    "title": "İanə et",
-    "info": "LocalSend pulsuz, açıq mənbəlidir və heç bir reklam yoxdur. Proqramı bəyənirsinizsə, ianə ilə inkişafını dəstəkləyə bilərsiniz.",
-    "donate": "{amount} ianə et",
-    "thanks": "Çox təşəkkür edirəm!",
-    "restore": "Satın almaları bərpa et"
   },
   "changelogPage": {
     "title": "Versiya jurnalı"

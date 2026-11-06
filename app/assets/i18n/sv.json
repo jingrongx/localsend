@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Övrigt",
-      "support": "Stöd LocalSend",
-      "donate": "Donera",
       "privacyPolicy": "Sekretesspolicy",
       "termsOfUse": "Användarvillkor"
     },
@@ -309,13 +307,6 @@
     "contributors": "Bidragsgivare",
     "packagers": "Paketerare",
     "translators": "Översättare"
-  },
-  "donationPage": {
-    "title": "Donera",
-    "info": "LocalSend är en fri app med öppen källkod och utan annonser. Om du gillar appen kan du stödja utvecklingen genom att donera.",
-    "donate": "Donera {amount}",
-    "thanks": "Tack så mycket!",
-    "restore": "Återställ köp"
   },
   "changelogPage": {
     "title": "Ändringslogg"

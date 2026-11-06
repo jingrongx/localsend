@@ -78,8 +78,6 @@ class TranslationsAr extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$ar aboutPage = _Translations$aboutPage$ar._(_root);
   @override
-  late final _Translations$donationPage$ar donationPage = _Translations$donationPage$ar._(_root);
-  @override
   late final _Translations$changelogPage$ar changelogPage = _Translations$changelogPage$ar._(_root);
   @override
   late final _Translations$whatsNewPage$ar whatsNewPage = _Translations$whatsNewPage$ar._(_root);
@@ -533,25 +531,6 @@ class _Translations$aboutPage$ar extends Translations$aboutPage$en {
   String get packagers => 'محزمي التطبيقات';
   @override
   String get translators => 'المترجمون';
-}
-
-// Path: donationPage
-class _Translations$donationPage$ar extends Translations$donationPage$en {
-  _Translations$donationPage$ar._(TranslationsAr root) : this._root = root, super.internal(root);
-
-  final TranslationsAr _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'تبرّع';
-  @override
-  String get info => 'LocalSend مجاني ومفتوح المصدر وبدون أي إعلانات. إذا أعجبك التطبيق، يمكنك دعم التطوير بالتبرع.';
-  @override
-  String donate({required Object amount}) => 'تبرّع ${amount}';
-  @override
-  String get thanks => 'شكراً جزيلاً!';
-  @override
-  String get restore => 'استعادة شراء';
 }
 
 // Path: changelogPage
@@ -1056,10 +1035,6 @@ class _Translations$settingsTab$other$ar extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'أخرى';
-  @override
-  String get support => 'دعم LocalSend';
-  @override
-  String get donate => 'تبرّع';
   @override
   String get privacyPolicy => 'سياسة الخصوصيّة';
   @override

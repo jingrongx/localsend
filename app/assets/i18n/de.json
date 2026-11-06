@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Weitere",
-      "support": "LocalSend unterstützen",
-      "donate": "Spenden",
       "privacyPolicy": "Datenschutzerklärung",
       "termsOfUse": "Nutzungsbedingungen"
     },
@@ -309,13 +307,6 @@
     "contributors": "Mitwirkende",
     "packagers": "Paketierende",
     "translators": "Übersetzende"
-  },
-  "donationPage": {
-    "title": "Spenden",
-    "info": "LocalSend ist kostenlos, quelloffen und frei von Werbung. Wenn dir diese App gefällt, kannst du die Entwicklung mit einer Spende unterstützen.",
-    "donate": "Spende {amount}",
-    "thanks": "Vielen Dank für deine Unterstützung!",
-    "restore": "Käufe wiederherstellen"
   },
   "changelogPage": {
     "title": "Änderungsprotokoll"

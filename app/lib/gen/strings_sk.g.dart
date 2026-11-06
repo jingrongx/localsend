@@ -78,8 +78,6 @@ class TranslationsSk extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$sk aboutPage = _Translations$aboutPage$sk._(_root);
   @override
-  late final _Translations$donationPage$sk donationPage = _Translations$donationPage$sk._(_root);
-  @override
   late final _Translations$changelogPage$sk changelogPage = _Translations$changelogPage$sk._(_root);
   @override
   late final _Translations$whatsNewPage$sk whatsNewPage = _Translations$whatsNewPage$sk._(_root);
@@ -533,25 +531,6 @@ class _Translations$aboutPage$sk extends Translations$aboutPage$en {
   String get packagers => 'Zostavovatelia balíkov';
   @override
   String get translators => 'Prekladatelia';
-}
-
-// Path: donationPage
-class _Translations$donationPage$sk extends Translations$donationPage$en {
-  _Translations$donationPage$sk._(TranslationsSk root) : this._root = root, super.internal(root);
-
-  final TranslationsSk _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Darovať';
-  @override
-  String get info => 'LocalSend je bezplatný, s otvoreným kódom a bez reklám. Ak sa vám aplikácia páči, môžete jej vývoj podporiť darom.';
-  @override
-  String donate({required Object amount}) => 'Darovať ${amount}';
-  @override
-  String get thanks => 'Ďakujeme veľmi pekne!';
-  @override
-  String get restore => 'Obnoviť nákup';
 }
 
 // Path: changelogPage
@@ -1056,10 +1035,6 @@ class _Translations$settingsTab$other$sk extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Iné';
-  @override
-  String get support => 'Podporte LocalSend';
-  @override
-  String get donate => 'Darovať';
   @override
   String get privacyPolicy => 'Zásady ochrany osobných údajov';
   @override

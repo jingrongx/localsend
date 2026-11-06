@@ -78,8 +78,6 @@ class TranslationsDe extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$de aboutPage = _Translations$aboutPage$de._(_root);
   @override
-  late final _Translations$donationPage$de donationPage = _Translations$donationPage$de._(_root);
-  @override
   late final _Translations$changelogPage$de changelogPage = _Translations$changelogPage$de._(_root);
   @override
   late final _Translations$whatsNewPage$de whatsNewPage = _Translations$whatsNewPage$de._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$de extends Translations$aboutPage$en {
   String get translators => 'Übersetzende';
 }
 
-// Path: donationPage
-class _Translations$donationPage$de extends Translations$donationPage$en {
-  _Translations$donationPage$de._(TranslationsDe root) : this._root = root, super.internal(root);
-
-  final TranslationsDe _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Spenden';
-  @override
-  String get info =>
-      'LocalSend ist kostenlos, quelloffen und frei von Werbung. Wenn dir diese App gefällt, kannst du die Entwicklung mit einer Spende unterstützen.';
-  @override
-  String donate({required Object amount}) => 'Spende ${amount}';
-  @override
-  String get thanks => 'Vielen Dank für deine Unterstützung!';
-  @override
-  String get restore => 'Käufe wiederherstellen';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$de extends Translations$changelogPage$en {
   _Translations$changelogPage$de._(TranslationsDe root) : this._root = root, super.internal(root);
@@ -972,10 +950,6 @@ class _Translations$settingsTab$other$de extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Weitere';
-  @override
-  String get support => 'LocalSend unterstützen';
-  @override
-  String get donate => 'Spenden';
   @override
   String get privacyPolicy => 'Datenschutzerklärung';
   @override

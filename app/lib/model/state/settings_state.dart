@@ -40,6 +40,7 @@ class SettingsState with SettingsStateMappable {
   final bool verifyChecksums; // verify checksums when receiving files
   final int discoveryTimeout;
   final bool advancedSettings;
+  final bool autoCheckUpdates;
 
   const SettingsState({
     required this.showToken,
@@ -73,5 +74,6 @@ class SettingsState with SettingsStateMappable {
     required this.verifyChecksums,
     required this.discoveryTimeout,
     required this.advancedSettings,
+    required this.autoCheckUpdates,
   });
 }

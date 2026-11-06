@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "أخرى",
-      "support": "دعم LocalSend",
-      "donate": "تبرّع",
       "privacyPolicy": "سياسة الخصوصيّة",
       "termsOfUse": "شروط الاستخدام"
     },
@@ -309,13 +307,6 @@
     "contributors": "المساهمون",
     "packagers": "محزمي التطبيقات",
     "translators": "المترجمون"
-  },
-  "donationPage": {
-    "title": "تبرّع",
-    "info": "LocalSend مجاني ومفتوح المصدر وبدون أي إعلانات. إذا أعجبك التطبيق، يمكنك دعم التطوير بالتبرع.",
-    "donate": "تبرّع {amount}",
-    "thanks": "شكراً جزيلاً!",
-    "restore": "استعادة شراء"
   },
   "changelogPage": {
     "title": "سجل التغييرات"

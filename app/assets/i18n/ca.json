@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Altres",
-      "support": "Doneu suport al LocalSend",
-      "donate": "Donació",
       "privacyPolicy": "Política de privadesa",
       "termsOfUse": "Condicions d'ús"
     },
@@ -309,13 +307,6 @@
     "contributors": "Col·laboradors",
     "packagers": "Empaquetadors",
     "translators": "Traductors"
-  },
-  "donationPage": {
-    "title": "Donació",
-    "info": "El LocalSend és gratuït, de codi obert i sense anuncis. Si us agrada l'aplicació, podeu donar suport al desenvolupament amb una donació.",
-    "donate": "Donació: {amount}",
-    "thanks": "Moltes gràcies!",
-    "restore": "Restaura la compra"
   },
   "changelogPage": {
     "title": "Registre de canvis"

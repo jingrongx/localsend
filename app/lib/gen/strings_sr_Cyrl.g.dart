@@ -79,8 +79,6 @@ class TranslationsSrCyrl extends TranslationsSr with BaseTranslations<AppLocale,
   @override
   late final _Translations$aboutPage$sr_Cyrl aboutPage = _Translations$aboutPage$sr_Cyrl._(_root);
   @override
-  late final _Translations$donationPage$sr_Cyrl donationPage = _Translations$donationPage$sr_Cyrl._(_root);
-  @override
   late final _Translations$changelogPage$sr_Cyrl changelogPage = _Translations$changelogPage$sr_Cyrl._(_root);
   @override
   late final _Translations$whatsNewPage$sr_Cyrl whatsNewPage = _Translations$whatsNewPage$sr_Cyrl._(_root);
@@ -534,25 +532,6 @@ class _Translations$aboutPage$sr_Cyrl extends Translations$aboutPage$sr {
   String get packagers => 'Пакери';
   @override
   String get translators => 'Преводиоци';
-}
-
-// Path: donationPage
-class _Translations$donationPage$sr_Cyrl extends Translations$donationPage$sr {
-  _Translations$donationPage$sr_Cyrl._(TranslationsSrCyrl root) : this._root = root, super.internal(root);
-
-  final TranslationsSrCyrl _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Донација';
-  @override
-  String get info => 'LocalSend је бесплатан, отвореног кода и без икаквих огласа. Ако вам се свиђа апликација, можете подржати развој донацијом.';
-  @override
-  String donate({required Object amount}) => 'Донирај ${amount}';
-  @override
-  String get thanks => 'Хвала вам пуно!';
-  @override
-  String get restore => 'Врати куповину';
 }
 
 // Path: changelogPage
@@ -1064,10 +1043,6 @@ class _Translations$settingsTab$other$sr_Cyrl extends Translations$settingsTab$o
   // Translations
   @override
   String get title => 'Остало';
-  @override
-  String get support => 'Подржите LocalSend';
-  @override
-  String get donate => 'Донирај';
   @override
   String get privacyPolicy => 'Политика приватности';
   @override

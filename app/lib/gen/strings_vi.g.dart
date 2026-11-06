@@ -78,8 +78,6 @@ class TranslationsVi extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$vi aboutPage = _Translations$aboutPage$vi._(_root);
   @override
-  late final _Translations$donationPage$vi donationPage = _Translations$donationPage$vi._(_root);
-  @override
   late final _Translations$changelogPage$vi changelogPage = _Translations$changelogPage$vi._(_root);
   @override
   late final _Translations$whatsNewPage$vi whatsNewPage = _Translations$whatsNewPage$vi._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$vi extends Translations$aboutPage$en {
   String get translators => 'Người dịch';
 }
 
-// Path: donationPage
-class _Translations$donationPage$vi extends Translations$donationPage$en {
-  _Translations$donationPage$vi._(TranslationsVi root) : this._root = root, super.internal(root);
-
-  final TranslationsVi _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Ủng hộ';
-  @override
-  String get info =>
-      'LocalSend là ứng dụng miễn phí, mã nguồn mở, không chứa quảng cáo. Nếu bạn yêu thích ứng dụng này, bạn có thể hỗ trợ việc phát triển bằng việc ủng hộ.';
-  @override
-  String donate({required Object amount}) => 'Ủng hộ ${amount}';
-  @override
-  String get thanks => 'Xin chân thành cảm ơn!';
-  @override
-  String get restore => 'Khôi phục lịch sử ủng hộ';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$vi extends Translations$changelogPage$en {
   _Translations$changelogPage$vi._(TranslationsVi root) : this._root = root, super.internal(root);
@@ -972,10 +950,6 @@ class _Translations$settingsTab$other$vi extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Khác';
-  @override
-  String get support => 'Hỗ trợ LocalSend';
-  @override
-  String get donate => 'Ủng hộ';
   @override
   String get privacyPolicy => 'Chính sách bảo mật';
   @override

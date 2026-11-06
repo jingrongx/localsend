@@ -153,8 +153,6 @@
     },
     "other": {
       "title": "其他",
-      "support": "支援 LocalSend",
-      "donate": "捐款",
       "privacyPolicy": "私隱權政策",
       "termsOfUse": "服務條款"
     },
@@ -310,13 +308,6 @@
     "contributors": "貢獻者",
     "packagers": "封裝人員",
     "translators": "翻譯人員"
-  },
-  "donationPage": {
-    "title": "@:settingsTab.other.donate",
-    "info": "LocalSend 唔單只免費、開源，仲係冇廣告添㗎！如果你鍾意呢個 app，不妨捐款贊助我哋開發？",
-    "donate": "捐 {amount}",
-    "thanks": "多謝支持！",
-    "restore": "還原 app 內購買"
   },
   "changelogPage": {
     "title": "更新記錄"

@@ -78,8 +78,6 @@ class TranslationsFilPh extends Translations with BaseTranslations<AppLocale, Tr
   @override
   late final _Translations$aboutPage$fil_PH aboutPage = _Translations$aboutPage$fil_PH._(_root);
   @override
-  late final _Translations$donationPage$fil_PH donationPage = _Translations$donationPage$fil_PH._(_root);
-  @override
   late final _Translations$changelogPage$fil_PH changelogPage = _Translations$changelogPage$fil_PH._(_root);
   @override
   late final _Translations$whatsNewPage$fil_PH whatsNewPage = _Translations$whatsNewPage$fil_PH._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$fil_PH extends Translations$aboutPage$en {
   String get packagers => 'Mga Packagers';
   @override
   String get translators => 'Mga Translator';
-}
-
-// Path: donationPage
-class _Translations$donationPage$fil_PH extends Translations$donationPage$en {
-  _Translations$donationPage$fil_PH._(TranslationsFilPh root) : this._root = root, super.internal(root);
-
-  final TranslationsFilPh _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Mag-donate';
-  @override
-  String get info =>
-      'Ang LocalSend ay libre, open-source, at walang anumang mga ad. Kung iyong nagustuhan ang app, maaari mong suportahan ang development sa pamamagitan ng donasyon.';
-  @override
-  String donate({required Object amount}) => 'Mag-donate ng ${amount}';
-  @override
-  String get thanks => 'Maraming salamat!';
-  @override
-  String get restore => 'Restore purchase';
 }
 
 // Path: changelogPage
@@ -1066,10 +1044,6 @@ class _Translations$settingsTab$other$fil_PH extends Translations$settingsTab$ot
   // Translations
   @override
   String get title => 'Iba Pa';
-  @override
-  String get support => 'Suportahan ang LocalSend';
-  @override
-  String get donate => 'Mag-donate';
   @override
   String get privacyPolicy => 'Patakaran sa Privacy';
   @override

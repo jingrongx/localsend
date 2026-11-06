@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Besteak",
-      "support": "LocalSend Lagundu",
-      "donate": "Dohaintza egin",
       "privacyPolicy": "Pribatutasun politika",
       "termsOfUse": "Erabilera baldintzak"
     },
@@ -309,13 +307,6 @@
     "contributors": "Laguntzaileak",
     "packagers": "Paketatzaileak",
     "translators": "Itzultzaileak"
-  },
-  "donationPage": {
-    "title": "Egin dohaintza",
-    "info": "LocalSend doakoa da, kode irekikoa eta iragarkirik gabea. Aplikazioa gustuko baduzu, garapena dohaintza batekin lagun dezakezu.",
-    "donate": "Eman {amount}",
-    "thanks": "Eskerrik asko!",
-    "restore": "Berreskuratu erosketa"
   },
   "changelogPage": {
     "title": "Aldaketak"

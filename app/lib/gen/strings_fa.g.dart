@@ -78,8 +78,6 @@ class TranslationsFa extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$fa aboutPage = _Translations$aboutPage$fa._(_root);
   @override
-  late final _Translations$donationPage$fa donationPage = _Translations$donationPage$fa._(_root);
-  @override
   late final _Translations$changelogPage$fa changelogPage = _Translations$changelogPage$fa._(_root);
   @override
   late final _Translations$whatsNewPage$fa whatsNewPage = _Translations$whatsNewPage$fa._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$fa extends Translations$aboutPage$en {
   String get packagers => 'بسته‌بندها';
   @override
   String get translators => 'مترجمان';
-}
-
-// Path: donationPage
-class _Translations$donationPage$fa extends Translations$donationPage$en {
-  _Translations$donationPage$fa._(TranslationsFa root) : this._root = root, super.internal(root);
-
-  final TranslationsFa _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'کمک مالی';
-  @override
-  String get info =>
-      'لوکال‌سند رایگان، متن‌باز و فاقد هرگونه تبلیغات است. اگر به این برنامه علاقه‌مندید، می‌توانید با کمک مالی از توسعه آن حمایت کنید.';
-  @override
-  String donate({required Object amount}) => 'کمک مالی به میزان ${amount}';
-  @override
-  String get thanks => 'از حمایت شما بسیار سپاسگزاریم!';
-  @override
-  String get restore => 'بازیابی خرید';
 }
 
 // Path: changelogPage
@@ -1057,10 +1035,6 @@ class _Translations$settingsTab$other$fa extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'سایر';
-  @override
-  String get support => 'حمایت از لوکال‌سند';
-  @override
-  String get donate => 'کمک مالی';
   @override
   String get privacyPolicy => 'سیاست حفظ حریم خصوصی';
   @override

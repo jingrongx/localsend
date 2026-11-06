@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Boshqa",
-      "support": "LocalSendni qoʻllab-quvvatlash",
-      "donate": "Xayriya",
       "privacyPolicy": "Maxfiylik siyosati",
       "termsOfUse": "Foydalanish shartlari"
     },
@@ -309,13 +307,6 @@
     "contributors": "Hissa qoʻshuvchilar",
     "packagers": "Paketlovchilar",
     "translators": "Tarjimonlar"
-  },
-  "donationPage": {
-    "title": "Xayriya",
-    "info": "LocalSend bepul, ochiq manbali va reklamasiz. Agar ilova sizga yoqqan boʻlsa, xayriya bilan rivojlanishni qoʻllab-quvvatlashingiz mumkin.",
-    "donate": "{amount} xayriya qilish",
-    "thanks": "Katta rahmat!",
-    "restore": "Xaridni tiklash"
   },
   "changelogPage": {
     "title": "Oʻzgarishlar tarixi"

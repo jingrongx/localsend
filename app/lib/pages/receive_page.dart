@@ -15,13 +15,13 @@ import 'package:localsend_app/util/device_type_ext.dart';
 import 'package:localsend_app/util/favorites.dart';
 import 'package:localsend_app/util/native/platform_check.dart';
 import 'package:localsend_app/util/native/taskbar_helper.dart';
+import 'package:localsend_app/util/navigation_compat.dart';
 import 'package:localsend_app/util/ui/snackbar.dart';
 import 'package:localsend_app/widget/device_bage.dart';
 import 'package:localsend_app/widget/responsive_list_view.dart';
 import 'package:localsend_isolates/model/device.dart';
 import 'package:localsend_isolates/model/dto/file_dto.dart';
 import 'package:localsend_isolates/model/session_status.dart';
-import 'package:refena_flutter/addons.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 import 'package:routerino/routerino.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -234,7 +234,7 @@ class _ReceivePageState extends State<ReceivePage> with Refena {
                                                       context.showSnackBar(t.general.copiedToClipboard);
                                                     }
                                                     vm.onAccept();
-                                                    context.global.dispatch(NavigateAction.popUntil<WebSharePage>());
+                                                    context.global.dispatch(NavigateActionCompat.popUntil<WebSharePage>());
                                                   },
                                                   icon: Icon(Icons.copy),
                                                   label: Text(t.general.copy),
@@ -249,7 +249,7 @@ class _ReceivePageState extends State<ReceivePage> with Refena {
                                                       // ignore: discarded_futures
                                                       launchUrl(Uri.parse(vm.message!), mode: LaunchMode.externalApplication);
                                                       vm.onAccept();
-                                                      context.global.dispatch(NavigateAction.popUntil<WebSharePage>());
+                                                      context.global.dispatch(NavigateActionCompat.popUntil<WebSharePage>());
                                                     },
                                                     icon: Icon(Icons.open_in_new),
                                                     label: Text(t.general.open),
@@ -297,7 +297,7 @@ class _Actions extends StatelessWidget {
           ),
           onPressed: () {
             vm.onAccept();
-            context.global.dispatch(NavigateAction.popUntil<WebSharePage>());
+            context.global.dispatch(NavigateActionCompat.popUntil<WebSharePage>());
           },
           icon: const Icon(Icons.close),
           label: Text(t.general.close),
@@ -320,7 +320,7 @@ class _Actions extends StatelessWidget {
             child: ElevatedButton.icon(
               onPressed: () {
                 vm.onClose();
-                context.global.dispatch(NavigateAction.popUntil<WebSharePage>());
+                context.global.dispatch(NavigateActionCompat.popUntil<WebSharePage>());
               },
               icon: const Icon(Icons.check_circle),
               label: Text(t.general.close),
@@ -332,7 +332,7 @@ class _Actions extends StatelessWidget {
 
     void decline() {
       vm.onDecline();
-      context.global.dispatch(NavigateAction.popUntil<WebSharePage>());
+      context.global.dispatch(NavigateActionCompat.popUntil<WebSharePage>());
     }
 
     final onAccept = selectedFiles.isEmpty ? null : vm.onAccept;

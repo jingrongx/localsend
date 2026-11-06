@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Lain-lain",
-      "support": "Sokong LocalSend",
-      "donate": "Derma",
       "privacyPolicy": "Dasar Privasi",
       "termsOfUse": "Syarat Penggunaan"
     },
@@ -309,13 +307,6 @@
     "contributors": "Penyumbang",
     "packagers": "Pembungkus",
     "translators": "Penterjemah"
-  },
-  "donationPage": {
-    "title": "Derma",
-    "info": "LocalSend adalah percuma, sumber terbuka dan tanpa iklan. Jika anda menyukai aplikasi ini, anda boleh menyokong pembangunannya dengan derma.",
-    "donate": "Derma {amount}",
-    "thanks": "Terima kasih banyak!",
-    "restore": "Pulihkan pembelian"
   },
   "changelogPage": {
     "title": "Log perubahan"

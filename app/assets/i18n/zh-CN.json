@@ -1,5 +1,5 @@
 {
-  "appName": "LocalSend",
+  "appName": "LocalSend X",
   "general": {
     "accept": "接受",
     "accepted": "已接受",
@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "其他",
-      "support": "支持 LocalSend",
-      "donate": "捐赠",
       "privacyPolicy": "隐私政策",
       "termsOfUse": "使用条款"
     },
@@ -305,17 +303,9 @@
       "LocalSend 是一款免费的开源应用程序，可让您通过本地网络与附近的设备安全地分享文件和信息，而无需互联网连接。",
       "本程序可在 Android、iOS、macOS、Windows 和 Linux 上使用。您可以在官方主页找到所有下载选项。"
     ],
-    "author": "作者",
-    "contributors": "贡献者",
-    "packagers": "打包者",
-    "translators": "翻译者"
-  },
-  "donationPage": {
-    "title": "捐赠",
-    "info": "LocalSend 免费、开源、无广告。如果您喜欢这款应用程序，可以捐款支持开发。",
-    "donate": "捐款 {amount}",
-    "thanks": "非常感谢您的支持！",
-    "restore": "恢复购买"
+    "upstreamProject": "上游项目：LocalSend（Apache-2.0）",
+    "licenseNotices": "许可信息",
+    "debugging": "调试"
   },
   "changelogPage": {
     "title": "更新日志"
@@ -572,5 +562,20 @@
     "sActionUseCameraHint": "使用摄像头",
     "sNameDurationLabel": "时长",
     "sUnitAssetCountLabel": "计数"
+  },
+  "update": {
+    "title": "检查更新",
+    "autoCheck": "启动时自动检查更新",
+    "checkForUpdates": "检查更新",
+    "checking": "正在检查更新…",
+    "upToDate": "已是最新版本",
+    "newVersion": "发现新版本 {version}",
+    "releaseNotes": "更新日志",
+    "download": "下载更新",
+    "downloading": "正在下载… {progress}%",
+    "downloaded": "下载完成，可以安装",
+    "install": "安装",
+    "checkFailed": "检查更新失败，请检查网络后重试。",
+    "retry": "重试"
   }
 }

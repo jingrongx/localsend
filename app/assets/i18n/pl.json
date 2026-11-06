@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Inne",
-      "support": "Wesprzyj LocalSend",
-      "donate": "Przekaż darowiznę",
       "privacyPolicy": "Polityka prywatności",
       "termsOfUse": "Warunki korzystania"
     },
@@ -309,13 +307,6 @@
     "contributors": "Współautorzy",
     "packagers": "Pakujący",
     "translators": "Tłumacze"
-  },
-  "donationPage": {
-    "title": "Przekaż darowiznę",
-    "info": "LocalSend jest darmową, otwartoźródłową aplikacją bez żadnych reklam. Jeśli podoba Ci się aplikacja, możesz wesprzeć jej rozwój darowizną.",
-    "donate": "Przekaż {amount}",
-    "thanks": "Bardzo Ci dziękuję!",
-    "restore": "Przywróć zakup"
   },
   "changelogPage": {
     "title": "Dziennik zmian"

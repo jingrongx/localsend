@@ -48,7 +48,6 @@ extension AppLocaleExt on AppLocale {
       AppLocale.fa => 'فارسی',
       AppLocale.fi => 'Suomi',
       AppLocale.fr => 'Français',
-      AppLocale.ga => 'Gaeilge',
       AppLocale.gl => 'Galego',
       AppLocale.gu => 'ગુજરાતી',
       AppLocale.he => 'עברית',

@@ -78,8 +78,6 @@ class TranslationsTh extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$th aboutPage = _Translations$aboutPage$th._(_root);
   @override
-  late final _Translations$donationPage$th donationPage = _Translations$donationPage$th._(_root);
-  @override
   late final _Translations$changelogPage$th changelogPage = _Translations$changelogPage$th._(_root);
   @override
   late final _Translations$whatsNewPage$th whatsNewPage = _Translations$whatsNewPage$th._(_root);
@@ -534,26 +532,6 @@ class _Translations$aboutPage$th extends Translations$aboutPage$en {
   String get packagers => 'ไลบรารี';
   @override
   String get translators => 'รายชื่อนักแปล';
-}
-
-// Path: donationPage
-class _Translations$donationPage$th extends Translations$donationPage$en {
-  _Translations$donationPage$th._(TranslationsTh root) : this._root = root, super.internal(root);
-
-  final TranslationsTh _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'บริจาค';
-  @override
-  String get info =>
-      'LocalSend เป็นแอปโอเพ่นซอร์สที่คุณสามารถดาวน์โหลดมาใช้ได้ฟรีโดยไม่เสียค่าใช้จ่ายหรือโฆษณาแฝง หากคุณชื่นชอบแอปนี้ คุณสามารถสนับสนุนการพัฒนาแอปได้ด้วยการบริจาคเงิน';
-  @override
-  String donate({required Object amount}) => 'บริจาคเงิน จำนวน ${amount}';
-  @override
-  String get thanks => 'ขอบคุณมาก!';
-  @override
-  String get restore => 'เรียกคืนข้อมูลการซื้อ';
 }
 
 // Path: changelogPage
@@ -1058,10 +1036,6 @@ class _Translations$settingsTab$other$th extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'อื่นๆ';
-  @override
-  String get support => 'สนับสนุน LocalSend';
-  @override
-  String get donate => 'บริจาค';
   @override
   String get privacyPolicy => 'นโยบายความเป็นส่วนตัว';
   @override

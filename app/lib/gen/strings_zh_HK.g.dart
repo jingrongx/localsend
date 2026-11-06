@@ -78,8 +78,6 @@ class TranslationsZhHk extends Translations with BaseTranslations<AppLocale, Tra
   @override
   late final Translations$aboutPage$zh_HK aboutPage = Translations$aboutPage$zh_HK.internal(_root);
   @override
-  late final Translations$donationPage$zh_HK donationPage = Translations$donationPage$zh_HK.internal(_root);
-  @override
   late final Translations$changelogPage$zh_HK changelogPage = Translations$changelogPage$zh_HK.internal(_root);
   @override
   late final Translations$whatsNewPage$zh_HK whatsNewPage = Translations$whatsNewPage$zh_HK.internal(_root);
@@ -532,25 +530,6 @@ class Translations$aboutPage$zh_HK extends Translations$aboutPage$en {
   String get translators => '翻譯人員';
 }
 
-// Path: donationPage
-class Translations$donationPage$zh_HK extends Translations$donationPage$en {
-  Translations$donationPage$zh_HK.internal(TranslationsZhHk root) : this._root = root, super.internal(root);
-
-  final TranslationsZhHk _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => _root.settingsTab.other.donate;
-  @override
-  String get info => 'LocalSend 唔單只免費、開源，仲係冇廣告添㗎！如果你鍾意呢個 app，不妨捐款贊助我哋開發？';
-  @override
-  String donate({required Object amount}) => '捐 ${amount}';
-  @override
-  String get thanks => '多謝支持！';
-  @override
-  String get restore => '還原 app 內購買';
-}
-
 // Path: changelogPage
 class Translations$changelogPage$zh_HK extends Translations$changelogPage$en {
   Translations$changelogPage$zh_HK.internal(TranslationsZhHk root) : this._root = root, super.internal(root);
@@ -974,10 +953,6 @@ class Translations$settingsTab$other$zh_HK extends Translations$settingsTab$othe
   // Translations
   @override
   String get title => '其他';
-  @override
-  String get support => '支援 LocalSend';
-  @override
-  String get donate => '捐款';
   @override
   String get privacyPolicy => '私隱權政策';
   @override

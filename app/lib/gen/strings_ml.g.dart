@@ -78,8 +78,6 @@ class TranslationsMl extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$ml aboutPage = _Translations$aboutPage$ml._(_root);
   @override
-  late final _Translations$donationPage$ml donationPage = _Translations$donationPage$ml._(_root);
-  @override
   late final _Translations$changelogPage$ml changelogPage = _Translations$changelogPage$ml._(_root);
   @override
   late final _Translations$whatsNewPage$ml whatsNewPage = _Translations$whatsNewPage$ml._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$ml extends Translations$aboutPage$en {
   String get translators => 'പരിഭാഷകർ';
 }
 
-// Path: donationPage
-class _Translations$donationPage$ml extends Translations$donationPage$en {
-  _Translations$donationPage$ml._(TranslationsMl root) : this._root = root, super.internal(root);
-
-  final TranslationsMl _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'സംഭാവന ചെയ്യുക';
-  @override
-  String get info =>
-      'ലോക്കൽസെൻഡ്‌ സൗജന്യവും ഓപ്പൺ-സോഴ്സും പരസ്യങ്ങൾ ഇല്ലാത്തതും ആണ്. നിങ്ങൾക്കു ആപ്പ് ഇഷ്ടമായെങ്കിൽ ചെറിയ സംഭാവന നൽകി വികസനത്തിന് സഹായിക്കാവുന്നതാണ്.';
-  @override
-  String donate({required Object amount}) => 'സംഭാവന ${amount}';
-  @override
-  String get thanks => 'ഒരുപാട് നന്ദിയുണ്ട്!';
-  @override
-  String get restore => 'വാങ്ങിയത് വീണ്ടെടുക്കുക';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$ml extends Translations$changelogPage$en {
   _Translations$changelogPage$ml._(TranslationsMl root) : this._root = root, super.internal(root);
@@ -971,10 +949,6 @@ class _Translations$settingsTab$other$ml extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'മറ്റുള്ളവ';
-  @override
-  String get support => 'ലോക്കൽ സെൻഡ് പിന്തുണ നൽകുക';
-  @override
-  String get donate => 'സംഭാവന ചെയ്യുക';
   @override
   String get privacyPolicy => 'സ്വകാര്യത നയം';
   @override

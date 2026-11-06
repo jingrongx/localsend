@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Otros",
-      "support": "Apoya a LocalSend",
-      "donate": "Donar",
       "privacyPolicy": "Política de privacidad",
       "termsOfUse": "Condiciones de uso"
     },
@@ -309,13 +307,6 @@
     "contributors": "Colaboradores",
     "packagers": "Empaquetadores",
     "translators": "Traductores"
-  },
-  "donationPage": {
-    "title": "Donar",
-    "info": "LocalSend es libre, open source y no contiene anuncios. Si te gusta la aplicación puedes ayudar al desarrollo con una donación.",
-    "donate": "Donar {amount}",
-    "thanks": "¡Muchas gracias!",
-    "restore": "Restablecer compra"
   },
   "changelogPage": {
     "title": "Registro de cambios"

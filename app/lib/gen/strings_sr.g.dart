@@ -78,8 +78,6 @@ class TranslationsSr extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final Translations$aboutPage$sr aboutPage = Translations$aboutPage$sr.internal(_root);
   @override
-  late final Translations$donationPage$sr donationPage = Translations$donationPage$sr.internal(_root);
-  @override
   late final Translations$changelogPage$sr changelogPage = Translations$changelogPage$sr.internal(_root);
   @override
   late final Translations$whatsNewPage$sr whatsNewPage = Translations$whatsNewPage$sr.internal(_root);
@@ -533,25 +531,6 @@ class Translations$aboutPage$sr extends Translations$aboutPage$en {
   String get packagers => 'Pakeri';
   @override
   String get translators => 'Prevodioci';
-}
-
-// Path: donationPage
-class Translations$donationPage$sr extends Translations$donationPage$en {
-  Translations$donationPage$sr.internal(TranslationsSr root) : this._root = root, super.internal(root);
-
-  final TranslationsSr _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Donacija';
-  @override
-  String get info => 'LocalSend je besplatan, otvorenog koda i bez ikakvih oglasa. Ako vam se sviđa aplikacija, možete podržati razvoj donacijom.';
-  @override
-  String donate({required Object amount}) => 'Doniraj ${amount}';
-  @override
-  String get thanks => 'Hvala vam puno!';
-  @override
-  String get restore => 'Vrati kupovinu';
 }
 
 // Path: changelogPage
@@ -1062,10 +1041,6 @@ class Translations$settingsTab$other$sr extends Translations$settingsTab$other$e
   // Translations
   @override
   String get title => 'Ostalo';
-  @override
-  String get support => 'Podržite LocalSend';
-  @override
-  String get donate => 'Doniraj';
   @override
   String get privacyPolicy => 'Politika privatnosti';
   @override

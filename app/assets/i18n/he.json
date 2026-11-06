@@ -154,8 +154,6 @@
     },
     "other": {
       "title": "אחר",
-      "support": "תמיכה ב-LocalSend",
-      "donate": "תרומה",
       "privacyPolicy": "מדיניות פרטיות",
       "termsOfUse": "תנאי השימוש"
     },
@@ -314,13 +312,6 @@
     "contributors": "תורמים",
     "packagers": "אורזים",
     "translators": "מתרגמים"
-  },
-  "donationPage": {
-    "title": "תרומה",
-    "info": "אפליקציית LocalSend היא חינמית, קוד פתוח וללא פרסומות. אם אתה אוהב את האפליקציה, אתה יכול לתמוך בפיתוח באמצעות תרומה.",
-    "donate": "תרומת {amount}",
-    "thanks": "תודה רבה!",
-    "restore": "שחזור רכישה"
   },
   "changelogPage": {
     "title": "יומן שינויים"

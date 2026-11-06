@@ -78,8 +78,6 @@ class TranslationsTa extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$ta aboutPage = _Translations$aboutPage$ta._(_root);
   @override
-  late final _Translations$donationPage$ta donationPage = _Translations$donationPage$ta._(_root);
-  @override
   late final _Translations$changelogPage$ta changelogPage = _Translations$changelogPage$ta._(_root);
   @override
   late final _Translations$whatsNewPage$ta whatsNewPage = _Translations$whatsNewPage$ta._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$ta extends Translations$aboutPage$en {
   String get packagers => 'பேக்கேஜர்கள்';
   @override
   String get translators => 'மொழிபெயர்ப்பாளர்கள்';
-}
-
-// Path: donationPage
-class _Translations$donationPage$ta extends Translations$donationPage$en {
-  _Translations$donationPage$ta._(TranslationsTa root) : this._root = root, super.internal(root);
-
-  final TranslationsTa _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'தானம்';
-  @override
-  String get info =>
-      'LocalSend இலவசம், திறந்த மூலமாக உள்ளது மற்றும் விளம்பரங்களின்றி உள்ளது. செயலியை நீங்கள் விரும்பினால், ஒரு தானம் மூலம் வளர்ச்சியை ஆதரிக்கலாம்.';
-  @override
-  String donate({required Object amount}) => '${amount} தானம் செய்யவும்';
-  @override
-  String get thanks => 'மிகவும் நன்றி!';
-  @override
-  String get restore => 'கொள்முதல் மீட்டமை';
 }
 
 // Path: changelogPage
@@ -1057,10 +1035,6 @@ class _Translations$settingsTab$other$ta extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'மற்றவை';
-  @override
-  String get support => 'LocalSend ஐ ஆதரிக்க';
-  @override
-  String get donate => 'நன்கொடை';
   @override
   String get privacyPolicy => 'தனியுரிமைக் கொள்கை';
   @override

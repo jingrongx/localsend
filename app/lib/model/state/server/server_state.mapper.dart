@@ -2,7 +2,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format off
 // ignore_for_file: type=lint
-// ignore_for_file: invalid_use_of_protected_member
 // ignore_for_file: unused_element, unnecessary_cast, override_on_non_overriding_member
 // ignore_for_file: strict_raw_type, inference_failure_on_untyped_parameter
 
@@ -37,6 +36,19 @@ class ServerStateMapper extends ClassMapperBase<ServerState> {
   );
   static WebShareState? _$web(ServerState v) => v.web;
   static const Field<ServerState, WebShareState> _f$web = Field('web', _$web);
+  static WebDownloadState? _$webDownloadState(ServerState v) =>
+      v.webDownloadState;
+  static const Field<ServerState, WebDownloadState> _f$webDownloadState = Field(
+    'webDownloadState',
+    _$webDownloadState,
+    mode: FieldMode.member,
+  );
+  static bool _$webUpload(ServerState v) => v.webUpload;
+  static const Field<ServerState, bool> _f$webUpload = Field(
+    'webUpload',
+    _$webUpload,
+    mode: FieldMode.member,
+  );
 
   @override
   final MappableFields<ServerState> fields = const {
@@ -45,6 +57,8 @@ class ServerStateMapper extends ClassMapperBase<ServerState> {
     #https: _f$https,
     #session: _f$session,
     #web: _f$web,
+    #webDownloadState: _f$webDownloadState,
+    #webUpload: _f$webUpload,
   };
 
   static ServerState _instantiate(DecodingData data) {
@@ -119,7 +133,6 @@ abstract class ServerStateCopyWith<$R, $In extends ServerState, $Out>
     implements ClassCopyWith<$R, $In, $Out> {
   ReceiveSessionStateCopyWith<$R, ReceiveSessionState, ReceiveSessionState>?
   get session;
-  WebShareStateCopyWith<$R, WebShareState, WebShareState>? get web;
   $R call({
     String? alias,
     int? port,
@@ -141,9 +154,6 @@ class _ServerStateCopyWithImpl<$R, $Out>
   @override
   ReceiveSessionStateCopyWith<$R, ReceiveSessionState, ReceiveSessionState>?
   get session => $value.session?.copyWith.$chain((v) => call(session: v));
-  @override
-  WebShareStateCopyWith<$R, WebShareState, WebShareState>? get web =>
-      $value.web?.copyWith.$chain((v) => call(web: v));
   @override
   $R call({
     String? alias,

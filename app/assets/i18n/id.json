@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Lainnya",
-      "support": "Dukung LocalSend",
-      "donate": "Donasi",
       "privacyPolicy": "Kebijakan Privasi",
       "termsOfUse": "Syarat dan Ketentuan Penggunaan"
     },
@@ -309,13 +307,6 @@
     "contributors": "Daftar Kontributor",
     "packagers": "Pengemas",
     "translators": "Daftar Penerjemah"
-  },
-  "donationPage": {
-    "title": "Donasi",
-    "info": "LocalSend adalah aplikasi gratis, bersumber terbuka, dan bebas iklan. Jika Anda menyukai aplikasi ini, mohon berikan kami dukungan dengan cara memberikan donasi.",
-    "donate": "Donasi {amount}",
-    "thanks": "Terima kasih banyak!",
-    "restore": "Kembalikan dana"
   },
   "changelogPage": {
     "title": "Catatan Perubahan"

@@ -78,8 +78,6 @@ class TranslationsKo extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$ko aboutPage = _Translations$aboutPage$ko._(_root);
   @override
-  late final _Translations$donationPage$ko donationPage = _Translations$donationPage$ko._(_root);
-  @override
   late final _Translations$changelogPage$ko changelogPage = _Translations$changelogPage$ko._(_root);
   @override
   late final _Translations$whatsNewPage$ko whatsNewPage = _Translations$whatsNewPage$ko._(_root);
@@ -532,25 +530,6 @@ class _Translations$aboutPage$ko extends Translations$aboutPage$en {
   String get translators => '번역가';
 }
 
-// Path: donationPage
-class _Translations$donationPage$ko extends Translations$donationPage$en {
-  _Translations$donationPage$ko._(TranslationsKo root) : this._root = root, super.internal(root);
-
-  final TranslationsKo _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => '기부';
-  @override
-  String get info => 'LocalSend는 광고없이 무료로 제공되는 오픈소스 프로젝트입니다. 앱이 마음에 드신다면 후원을 통해 프로젝트 개발을 지원해주세요.';
-  @override
-  String donate({required Object amount}) => '${amount} 기부하기';
-  @override
-  String get thanks => '진심으로 감사드립니다!';
-  @override
-  String get restore => '구매 복원';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$ko extends Translations$changelogPage$en {
   _Translations$changelogPage$ko._(TranslationsKo root) : this._root = root, super.internal(root);
@@ -967,10 +946,6 @@ class _Translations$settingsTab$other$ko extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => '기타';
-  @override
-  String get support => 'LocalSend 후원하기';
-  @override
-  String get donate => '기부';
   @override
   String get privacyPolicy => '개인정보 처리 방침';
   @override

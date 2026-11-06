@@ -78,8 +78,6 @@ class TranslationsEl extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$el aboutPage = _Translations$aboutPage$el._(_root);
   @override
-  late final _Translations$donationPage$el donationPage = _Translations$donationPage$el._(_root);
-  @override
   late final _Translations$changelogPage$el changelogPage = _Translations$changelogPage$el._(_root);
   @override
   late final _Translations$whatsNewPage$el whatsNewPage = _Translations$whatsNewPage$el._(_root);
@@ -534,26 +532,6 @@ class _Translations$aboutPage$el extends Translations$aboutPage$en {
   String get packagers => 'Συσκευαστές';
   @override
   String get translators => 'Μεταφραστές';
-}
-
-// Path: donationPage
-class _Translations$donationPage$el extends Translations$donationPage$en {
-  _Translations$donationPage$el._(TranslationsEl root) : this._root = root, super.internal(root);
-
-  final TranslationsEl _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Δωρεά';
-  @override
-  String get info =>
-      'Το LocalSend είναι δωρεάν, ανοιχτού κώδικα και χωρίς διαφημίσεις. Εάν σας αρέσει η εφαρμογή, μπορείτε να υποστηρίξετε την ανάπτυξή της με μια δωρεά.';
-  @override
-  String donate({required Object amount}) => 'Δωρεά ${amount}';
-  @override
-  String get thanks => 'Ευχαριστούμε πολύ!';
-  @override
-  String get restore => 'Επαναφορά αγοράς';
 }
 
 // Path: changelogPage
@@ -1058,10 +1036,6 @@ class _Translations$settingsTab$other$el extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Άλλα';
-  @override
-  String get support => 'Υποστηρίξτε το LocalSend';
-  @override
-  String get donate => 'Δωρεά';
   @override
   String get privacyPolicy => 'Πολιτική Απορρήτου';
   @override

@@ -95,7 +95,8 @@ const _receiveViaLinkAutoAccept = 'ls_receive_via_link_auto_accept';
 const _createChecksums = 'ls_create_checksums';
 const _verifyChecksums = 'ls_verify_checksums';
 const _advancedSettingsKey = 'ls_advanced_settings';
-const _whatsNewKey = 'ls_whats_new';
+const _autoCheckUpdatesKey = 'ls_auto_check_updates';
+const _updatePromptedVersionKey = 'ls_update_prompted_version';
 
 final persistenceProvider = Provider<PersistenceService>((ref) {
   throw Exception('persistenceProvider not initialized');
@@ -456,6 +457,22 @@ class PersistenceService {
     await _prefs.setBool(_advancedSettingsKey, isEnabled);
   }
 
+  bool getAutoCheckUpdates() {
+    return _prefs.getBool(_autoCheckUpdatesKey) ?? true;
+  }
+
+  Future<void> setAutoCheckUpdates(bool isEnabled) async {
+    await _prefs.setBool(_autoCheckUpdatesKey, isEnabled);
+  }
+
+  String? getUpdatePromptedVersion() {
+    return _prefs.getString(_updatePromptedVersionKey);
+  }
+
+  Future<void> setUpdatePromptedVersion(String version) async {
+    await _prefs.setString(_updatePromptedVersionKey, version);
+  }
+
   QuickSaveMode getQuickSave() {
     final value = _prefs.getString(_quickSave);
     return QuickSaveMode.values.firstWhereOrNull((mode) => mode.name == value) ?? QuickSaveMode.paired;
@@ -590,14 +607,6 @@ class PersistenceService {
 
   Future<void> setDeviceModel(String deviceModel) async {
     await _prefs.setString(_deviceModel, deviceModel);
-  }
-
-  String? getWhatsNew() {
-    return _prefs.getString(_whatsNewKey);
-  }
-
-  Future<void> setWhatsNew(String version) async {
-    await _prefs.setString(_whatsNewKey, version);
   }
 
   Future<void> clear() async {

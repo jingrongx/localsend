@@ -78,8 +78,6 @@ class TranslationsCs extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$cs aboutPage = _Translations$aboutPage$cs._(_root);
   @override
-  late final _Translations$donationPage$cs donationPage = _Translations$donationPage$cs._(_root);
-  @override
   late final _Translations$changelogPage$cs changelogPage = _Translations$changelogPage$cs._(_root);
   @override
   late final _Translations$whatsNewPage$cs whatsNewPage = _Translations$whatsNewPage$cs._(_root);
@@ -533,25 +531,6 @@ class _Translations$aboutPage$cs extends Translations$aboutPage$en {
   String get translators => 'Překladatelé';
 }
 
-// Path: donationPage
-class _Translations$donationPage$cs extends Translations$donationPage$en {
-  _Translations$donationPage$cs._(TranslationsCs root) : this._root = root, super.internal(root);
-
-  final TranslationsCs _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Darovat';
-  @override
-  String get info => 'LocalSend je zdarma, open source a bez reklam. Pokud se vám aplikace líbí, můžete její vývoj podpořit darem.';
-  @override
-  String donate({required Object amount}) => 'Darovat ${amount}';
-  @override
-  String get thanks => 'Děkuji mnohokrát!';
-  @override
-  String get restore => 'Obnovit';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$cs extends Translations$changelogPage$en {
   _Translations$changelogPage$cs._(TranslationsCs root) : this._root = root, super.internal(root);
@@ -971,10 +950,6 @@ class _Translations$settingsTab$other$cs extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Ostatní';
-  @override
-  String get support => 'Podpora LocalSend';
-  @override
-  String get donate => 'Darovat';
   @override
   String get privacyPolicy => 'Zásady ochrany osobních údajů';
   @override

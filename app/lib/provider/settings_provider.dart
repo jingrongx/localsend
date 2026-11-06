@@ -79,6 +79,7 @@ class SettingsService extends PureNotifier<SettingsState> {
     verifyChecksums: _persistence.getVerifyChecksums(),
     discoveryTimeout: _persistence.getDiscoveryTimeout(),
     advancedSettings: _persistence.getAdvancedSettingsEnabled(),
+    autoCheckUpdates: _persistence.getAutoCheckUpdates(),
   );
 
   Future<void> setAlias(String alias) async {
@@ -113,6 +114,13 @@ class SettingsService extends PureNotifier<SettingsState> {
     await _persistence.setAdvancedSettingsEnabled(isEnabled);
     state = state.copyWith(
       advancedSettings: isEnabled,
+    );
+  }
+
+  Future<void> setAutoCheckUpdates(bool isEnabled) async {
+    await _persistence.setAutoCheckUpdates(isEnabled);
+    state = state.copyWith(
+      autoCheckUpdates: isEnabled,
     );
   }
 

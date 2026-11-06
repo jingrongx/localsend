@@ -3,8 +3,8 @@
 /// Source: assets/i18n
 /// To regenerate, run: `dart run slang`
 ///
-/// Locales: 59
-/// Strings: 21533 (364 per locale)
+/// Locales: 58
+/// Strings: 20781 (358 per locale)
 
 // coverage:ignore-file
 // ignore_for_file: type=lint, unused_import
@@ -30,7 +30,6 @@ import 'strings_eu.g.dart' deferred as l_eu;
 import 'strings_fa.g.dart' deferred as l_fa;
 import 'strings_fi.g.dart' deferred as l_fi;
 import 'strings_fr.g.dart' deferred as l_fr;
-import 'strings_ga.g.dart' deferred as l_ga;
 import 'strings_gl.g.dart' deferred as l_gl;
 import 'strings_gu.g.dart' deferred as l_gu;
 import 'strings_he.g.dart' deferred as l_he;
@@ -98,7 +97,6 @@ enum AppLocale with BaseAppLocale<AppLocale, Translations> {
   fa(languageCode: 'fa'),
   fi(languageCode: 'fi'),
   fr(languageCode: 'fr'),
-  ga(languageCode: 'ga'),
   gl(languageCode: 'gl'),
   gu(languageCode: 'gu'),
   he(languageCode: 'he'),
@@ -140,8 +138,7 @@ enum AppLocale with BaseAppLocale<AppLocale, Translations> {
   srCyrl(languageCode: 'sr', scriptCode: 'Cyrl'),
   zhCn(languageCode: 'zh', countryCode: 'CN'),
   zhHk(languageCode: 'zh', countryCode: 'HK'),
-  zhTw(languageCode: 'zh', countryCode: 'TW')
-  ;
+  zhTw(languageCode: 'zh', countryCode: 'TW');
 
   const AppLocale({
     required this.languageCode,
@@ -270,13 +267,6 @@ enum AppLocale with BaseAppLocale<AppLocale, Translations> {
       case AppLocale.fr:
         await l_fr.loadLibrary();
         return l_fr.TranslationsFr(
-          overrides: overrides,
-          cardinalResolver: cardinalResolver,
-          ordinalResolver: ordinalResolver,
-        );
-      case AppLocale.ga:
-        await l_ga.loadLibrary();
-        return l_ga.TranslationsGa(
           overrides: overrides,
           cardinalResolver: cardinalResolver,
           ordinalResolver: ordinalResolver,
@@ -677,12 +667,6 @@ enum AppLocale with BaseAppLocale<AppLocale, Translations> {
         );
       case AppLocale.fr:
         return l_fr.TranslationsFr(
-          overrides: overrides,
-          cardinalResolver: cardinalResolver,
-          ordinalResolver: ordinalResolver,
-        );
-      case AppLocale.ga:
-        return l_ga.TranslationsGa(
           overrides: overrides,
           cardinalResolver: cardinalResolver,
           ordinalResolver: ordinalResolver,

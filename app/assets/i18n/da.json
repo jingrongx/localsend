@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Andet",
-      "support": "Støt LocalSend",
-      "donate": "Donér",
       "privacyPolicy": "Privatlivspolitik",
       "termsOfUse": "Brugsbetingelser"
     },
@@ -309,13 +307,6 @@
     "contributors": "Bidragydere",
     "packagers": "Pakkere",
     "translators": "Oversættere"
-  },
-  "donationPage": {
-    "title": "Donér",
-    "info": "LocalSend er gratis, open source og uden annoncer. Hvis du kan lide appen, kan du støtte udviklingen med en donation.",
-    "donate": "Donér {amount}",
-    "thanks": "Tusind tak for din støtte!",
-    "restore": "Gendan køb"
   },
   "changelogPage": {
     "title": "Ændringslog"

@@ -78,8 +78,6 @@ class TranslationsLo extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$lo aboutPage = _Translations$aboutPage$lo._(_root);
   @override
-  late final _Translations$donationPage$lo donationPage = _Translations$donationPage$lo._(_root);
-  @override
   late final _Translations$changelogPage$lo changelogPage = _Translations$changelogPage$lo._(_root);
   @override
   late final _Translations$whatsNewPage$lo whatsNewPage = _Translations$whatsNewPage$lo._(_root);
@@ -533,25 +531,6 @@ class _Translations$aboutPage$lo extends Translations$aboutPage$en {
   String get packagers => 'ຜູ້ຈັດແພັກເກັດ';
   @override
   String get translators => 'ຜູ້ແປພາສາ';
-}
-
-// Path: donationPage
-class _Translations$donationPage$lo extends Translations$donationPage$en {
-  _Translations$donationPage$lo._(TranslationsLo root) : this._root = root, super.internal(root);
-
-  final TranslationsLo _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'ບໍລິຈາກ';
-  @override
-  String get info => 'LocalSend ຟຣີ, ໂອເພັນຊອດ ແລະ ບໍ່ມີໂຄສະນາ. ຖ້າທ່ານມັກແອັບນີ້ ທ່ານສາມາດສະໜັບສະໜູນການພັດທະນາດ້ວຍການບໍລິຈາກ.';
-  @override
-  String donate({required Object amount}) => 'ບໍລິຈາກ ${amount}';
-  @override
-  String get thanks => 'ຂອບໃຈຫຼາຍໆ!';
-  @override
-  String get restore => 'ກູ້ຄືນການຊື້';
 }
 
 // Path: changelogPage
@@ -1053,10 +1032,6 @@ class _Translations$settingsTab$other$lo extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'ອື່ນໆ';
-  @override
-  String get support => 'ສະໜັບສະໜູນ LocalSend';
-  @override
-  String get donate => 'ບໍລິຈາກ';
   @override
   String get privacyPolicy => 'ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ';
   @override

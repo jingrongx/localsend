@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "org.localsend.localsend_app"
+    namespace "io.github.jingrongx.localsend"
     compileSdkVersion 36
     ndkVersion flutter.ndkVersion
 
@@ -41,11 +41,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.localsend.localsend_app"
+        applicationId "io.github.jingrongx.localsend"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion 37
+        minSdkVersion 21
+        targetSdkVersion 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
@@ -60,8 +60,13 @@ android {
 
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
-            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            // storeFile is resolved relative to app/android/ (the Gradle root project)
+            storeFile keystoreProperties['storeFile'] ? rootProject.file(keystoreProperties['storeFile']) : null
             storePassword keystoreProperties['storePassword']
+            // Android < 7.0 (API < 24) only verifies v1 (JAR) signatures,
+            // which is mandatory for old TV boxes.
+            enableV1Signing = true
+            enableV2Signing = true
         }
     }
 

@@ -5,11 +5,12 @@ import 'package:localsend_app/gen/strings.g.dart';
 import 'package:localsend_app/model/persistence/color_mode.dart';
 import 'package:localsend_app/pages/about/about_page.dart';
 import 'package:localsend_app/pages/changelog_page.dart';
-import 'package:localsend_app/pages/donation/donation_page.dart';
 import 'package:localsend_app/pages/settings/network_interfaces_page.dart';
 import 'package:localsend_app/pages/tabs/settings_tab_controller.dart';
+import 'package:localsend_app/pages/update/update_page.dart';
 import 'package:localsend_app/provider/network/server/server_provider.dart';
 import 'package:localsend_app/provider/settings_provider.dart';
+import 'package:localsend_app/provider/update/update_provider.dart';
 import 'package:localsend_app/provider/version_provider.dart';
 import 'package:localsend_app/util/alias_generator.dart';
 import 'package:localsend_app/util/device_type_ext.dart';
@@ -539,13 +540,6 @@ class SettingsTab extends StatelessWidget {
                   },
                 ),
                 _ButtonEntry(
-                  label: t.settingsTab.other.support,
-                  buttonLabel: t.settingsTab.other.donate,
-                  onTap: () async {
-                    await context.push(() => const DonationPage());
-                  },
-                ),
-                _ButtonEntry(
                   label: t.settingsTab.other.privacyPolicy,
                   buttonLabel: t.general.open,
                   onTap: () async {
@@ -596,9 +590,10 @@ class SettingsTab extends StatelessWidget {
                   orElse: () => Container(),
                 ),
             Text(
-              '© ${DateTime.now().year} Tien Do Nam',
+              '© ${DateTime.now().year} jingrongx',
               textAlign: TextAlign.center,
             ),
+            const _UpdateSection(),
             Center(
               child: TextButton.icon(
                 style: TextButton.styleFrom(
@@ -692,7 +687,7 @@ class _BooleanEntry extends StatelessWidget {
                 value: value,
                 onChanged: onChanged,
                 activeTrackColor: theme.colorScheme.primary,
-                activeThumbColor: theme.colorScheme.onPrimary,
+                activeColor: theme.colorScheme.onPrimary,
                 inactiveThumbColor: theme.colorScheme.outline,
                 inactiveTrackColor: theme.colorScheme.surface,
               ),
@@ -794,5 +789,59 @@ extension on ColorMode {
       ColorMode.yaru => 'Yaru',
       ColorMode.custom => t.settingsTab.general.colorOptions.custom,
     };
+  }
+}
+
+class _UpdateSection extends StatelessWidget {
+  const _UpdateSection();
+
+  @override
+  Widget build(BuildContext context) {
+    final ref = context.ref;
+    final settings = ref.watch(settingsProvider);
+    final updateState = ref.watch(updateProvider);
+
+    return Column(
+      children: [
+        LabeledCheckbox(
+          label: t.update.autoCheck,
+          value: settings.autoCheckUpdates,
+          labelFirst: true,
+          onChanged: (b) async {
+            await ref.notifier(settingsProvider).setAutoCheckUpdates(b == true);
+          },
+        ),
+        Center(
+          child: switch (updateState.status) {
+            UpdateStatus.checking => TextButton.icon(
+              onPressed: null,
+              icon: const SizedBox(
+                width: 16,
+                height: 16,
+                child: CircularProgressIndicator(strokeWidth: 2),
+              ),
+              label: Text(t.update.checking),
+            ),
+            UpdateStatus.available => TextButton.icon(
+              onPressed: () async {
+                await context.push(() => const UpdatePage());
+              },
+              icon: const Icon(Icons.system_update, color: Colors.green),
+              label: Text(t.update.newVersion(version: updateState.release?.version ?? '')),
+            ),
+            _ => TextButton.icon(
+              style: TextButton.styleFrom(
+                foregroundColor: Theme.of(context).colorScheme.onSurface,
+              ),
+              onPressed: () async {
+                await context.push(() => const UpdatePage(autoCheck: true));
+              },
+              icon: const Icon(Icons.system_update),
+              label: Text(t.update.checkForUpdates),
+            ),
+          },
+        ),
+      ],
+    );
   }
 }

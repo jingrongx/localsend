@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "دیگر",
-      "support": "LocalSend کی حمایت کریں",
-      "donate": "عطیہ کریں",
       "privacyPolicy": "رازداری کی پالیسی",
       "termsOfUse": "استعمال کی شرائط"
     },
@@ -309,13 +307,6 @@
     "contributors": "تعاون کنندگان",
     "packagers": "پیکجرز",
     "translators": "مترجمین"
-  },
-  "donationPage": {
-    "title": "عطیہ کریں",
-    "info": "LocalSend مفت، اوپن سورس ہے اور اس میں کوئی اشتہارات نہیں ہیں۔ اگر آپ کو ایپ پسند ہے، تو آپ عطیہ کے ذریعے ترقی کی حمایت کر سکتے ہیں۔",
-    "donate": "عطیہ کریں {amount}",
-    "thanks": "آپ کا بہت بہت شکریہ!",
-    "restore": "خریداری بحال کریں"
   },
   "changelogPage": {
     "title": "چینج لاگ"

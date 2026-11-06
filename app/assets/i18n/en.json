@@ -1,5 +1,5 @@
 {
-  "appName": "LocalSend",
+  "appName": "LocalSend X",
   "general": {
     "accept": "Accept",
     "accepted": "Accepted",
@@ -154,8 +154,6 @@
     },
     "other": {
       "title": "Other",
-      "support": "Support LocalSend",
-      "donate": "Donate",
       "privacyPolicy": "Privacy Policy",
       "termsOfUse": "Terms of Use"
     },
@@ -307,17 +305,9 @@
       "LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
       "This app is available on Android, iOS, macOS, Windows and Linux. You can find all download options on the official homepage."
     ],
-    "author": "Author",
-    "contributors": "Contributors",
-    "packagers": "Packagers",
-    "translators": "Translators"
-  },
-  "donationPage": {
-    "title": "Donate",
-    "info": "LocalSend is free, open-source and without any ads. If you like the app, you can support the development with a donation.",
-    "donate": "Donate {amount}",
-    "thanks": "Thank you very much!",
-    "restore": "Restore purchase"
+    "upstreamProject": "Upstream project: LocalSend (Apache-2.0)",
+    "licenseNotices": "License Notices",
+    "debugging": "Debugging"
   },
   "changelogPage": {
     "title": "Changelog"
@@ -576,5 +566,20 @@
     "sActionUseCameraHint": "use camera",
     "sNameDurationLabel": "duration",
     "sUnitAssetCountLabel": "count"
+  },
+  "update": {
+    "title": "Update",
+    "autoCheck": "Check for updates automatically",
+    "checkForUpdates": "Check for updates",
+    "checking": "Checking for updates…",
+    "upToDate": "You are using the latest version",
+    "newVersion": "New version {version} available",
+    "releaseNotes": "Release Notes",
+    "download": "Download update",
+    "downloading": "Downloading… {progress}%",
+    "downloaded": "Download complete, ready to install",
+    "install": "Install",
+    "checkFailed": "Update check failed. Check your network and try again.",
+    "retry": "Retry"
   }
 }

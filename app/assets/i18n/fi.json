@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Muut",
-      "support": "Tue LocalSendia",
-      "donate": "Lahjoita",
       "privacyPolicy": "Tietosuojakäytäntö",
       "termsOfUse": "Käyttöehdot"
     },
@@ -309,13 +307,6 @@
     "contributors": "Avustajat",
     "packagers": "Pakkaajat",
     "translators": "Kääntäjät"
-  },
-  "donationPage": {
-    "title": "Lahjoita",
-    "info": "LocalSend on ilmainen, avoimen lähdekoodin sovellus ilman mainoksia. Voit tukea projektia lahjoituksella, jos pidät sovelluksesta.",
-    "donate": "Lahjoita {amount}",
-    "thanks": "Suuret kiitokset!",
-    "restore": "Palauta ostos"
   },
   "changelogPage": {
     "title": "Muutosloki"

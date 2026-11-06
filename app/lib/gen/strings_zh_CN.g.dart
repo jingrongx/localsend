@@ -40,7 +40,7 @@ class TranslationsZhCn extends Translations with BaseTranslations<AppLocale, Tra
 
   // Translations
   @override
-  String get appName => 'LocalSend';
+  String get appName => 'LocalSend X';
   @override
   late final Translations$general$zh_CN general = Translations$general$zh_CN.internal(_root);
   @override
@@ -78,8 +78,6 @@ class TranslationsZhCn extends Translations with BaseTranslations<AppLocale, Tra
   @override
   late final Translations$aboutPage$zh_CN aboutPage = Translations$aboutPage$zh_CN.internal(_root);
   @override
-  late final Translations$donationPage$zh_CN donationPage = Translations$donationPage$zh_CN.internal(_root);
-  @override
   late final Translations$changelogPage$zh_CN changelogPage = Translations$changelogPage$zh_CN.internal(_root);
   @override
   late final Translations$whatsNewPage$zh_CN whatsNewPage = Translations$whatsNewPage$zh_CN.internal(_root);
@@ -95,6 +93,8 @@ class TranslationsZhCn extends Translations with BaseTranslations<AppLocale, Tra
   late final Translations$web$zh_CN web = Translations$web$zh_CN.internal(_root);
   @override
   late final Translations$assetPicker$zh_CN assetPicker = Translations$assetPicker$zh_CN.internal(_root);
+  @override
+  late final Translations$update$zh_CN update = Translations$update$zh_CN.internal(_root);
 }
 
 // Path: general
@@ -525,32 +525,11 @@ class Translations$aboutPage$zh_CN extends Translations$aboutPage$en {
     '本程序可在 Android、iOS、macOS、Windows 和 Linux 上使用。您可以在官方主页找到所有下载选项。',
   ];
   @override
-  String get author => '作者';
+  String get upstreamProject => '上游项目：LocalSend（Apache-2.0）';
   @override
-  String get contributors => '贡献者';
+  String get licenseNotices => '许可信息';
   @override
-  String get packagers => '打包者';
-  @override
-  String get translators => '翻译者';
-}
-
-// Path: donationPage
-class Translations$donationPage$zh_CN extends Translations$donationPage$en {
-  Translations$donationPage$zh_CN.internal(TranslationsZhCn root) : this._root = root, super.internal(root);
-
-  final TranslationsZhCn _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => '捐赠';
-  @override
-  String get info => 'LocalSend 免费、开源、无广告。如果您喜欢这款应用程序，可以捐款支持开发。';
-  @override
-  String donate({required Object amount}) => '捐款 ${amount}';
-  @override
-  String get thanks => '非常感谢您的支持！';
-  @override
-  String get restore => '恢复购买';
+  String get debugging => '调试';
 }
 
 // Path: changelogPage
@@ -840,6 +819,41 @@ class Translations$assetPicker$zh_CN extends Translations$assetPicker$en {
   String get sUnitAssetCountLabel => '计数';
 }
 
+// Path: update
+class Translations$update$zh_CN extends Translations$update$en {
+  Translations$update$zh_CN.internal(TranslationsZhCn root) : this._root = root, super.internal(root);
+
+  final TranslationsZhCn _root; // ignore: unused_field
+
+  // Translations
+  @override
+  String get title => '检查更新';
+  @override
+  String get autoCheck => '启动时自动检查更新';
+  @override
+  String get checkForUpdates => '检查更新';
+  @override
+  String get checking => '正在检查更新…';
+  @override
+  String get upToDate => '已是最新版本';
+  @override
+  String newVersion({required Object version}) => '发现新版本 ${version}';
+  @override
+  String get releaseNotes => '更新日志';
+  @override
+  String get download => '下载更新';
+  @override
+  String downloading({required Object progress}) => '正在下载… ${progress}%';
+  @override
+  String get downloaded => '下载完成，可以安装';
+  @override
+  String get install => '安装';
+  @override
+  String get checkFailed => '检查更新失败，请检查网络后重试。';
+  @override
+  String get retry => '重试';
+}
+
 // Path: receiveTab.infoBox
 class Translations$receiveTab$infoBox$zh_CN extends Translations$receiveTab$infoBox$en {
   Translations$receiveTab$infoBox$zh_CN.internal(TranslationsZhCn root) : this._root = root, super.internal(root);
@@ -1057,10 +1071,6 @@ class Translations$settingsTab$other$zh_CN extends Translations$settingsTab$othe
   // Translations
   @override
   String get title => '其他';
-  @override
-  String get support => '支持 LocalSend';
-  @override
-  String get donate => '捐赠';
   @override
   String get privacyPolicy => '隐私政策';
   @override

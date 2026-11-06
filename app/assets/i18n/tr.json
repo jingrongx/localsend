@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Diğer",
-      "support": "LocalSend'i destekle",
-      "donate": "Bağış yap",
       "privacyPolicy": "Gizlilik politikası",
       "termsOfUse": "Kullanım koşulları"
     },
@@ -309,13 +307,6 @@
     "contributors": "Katkıda bulunanlar",
     "packagers": "Paketleyiciler",
     "translators": "Çevirmenler"
-  },
-  "donationPage": {
-    "title": "Bağış yap",
-    "info": "LocalSend ücretsiz, açık kaynaklı ve reklamsız bir uygulamadır. Eğer uygulamayı beğendiyseniz, bağış yaparak uygulamanın gelişimine katkıda bulunabilirsiniz.",
-    "donate": "Bağışta bulun {amount}",
-    "thanks": "Çok teşekkür ederim!",
-    "restore": "Satın alınanları geri yükle"
   },
   "changelogPage": {
     "title": "Değişiklik günlüğü"

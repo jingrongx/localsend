@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Ostatní",
-      "support": "Podpora LocalSend",
-      "donate": "Darovat",
       "privacyPolicy": "Zásady ochrany osobních údajů",
       "termsOfUse": "Podmínky použití"
     },
@@ -309,13 +307,6 @@
     "contributors": "Přispěvatelé",
     "packagers": "Baliči",
     "translators": "Překladatelé"
-  },
-  "donationPage": {
-    "title": "Darovat",
-    "info": "LocalSend je zdarma, open source a bez reklam. Pokud se vám aplikace líbí, můžete její vývoj podpořit darem.",
-    "donate": "Darovat {amount}",
-    "thanks": "Děkuji mnohokrát!",
-    "restore": "Obnovit"
   },
   "changelogPage": {
     "title": "Seznam změn"

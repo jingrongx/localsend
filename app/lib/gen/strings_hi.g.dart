@@ -78,8 +78,6 @@ class TranslationsHi extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$hi aboutPage = _Translations$aboutPage$hi._(_root);
   @override
-  late final _Translations$donationPage$hi donationPage = _Translations$donationPage$hi._(_root);
-  @override
   late final _Translations$changelogPage$hi changelogPage = _Translations$changelogPage$hi._(_root);
   @override
   late final _Translations$whatsNewPage$hi whatsNewPage = _Translations$whatsNewPage$hi._(_root);
@@ -533,25 +531,6 @@ class _Translations$aboutPage$hi extends Translations$aboutPage$en {
   String get packagers => 'पैकेजर्स';
   @override
   String get translators => 'अनुवादकों';
-}
-
-// Path: donationPage
-class _Translations$donationPage$hi extends Translations$donationPage$en {
-  _Translations$donationPage$hi._(TranslationsHi root) : this._root = root, super.internal(root);
-
-  final TranslationsHi _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'दान करें';
-  @override
-  String get info => 'LocalSend मुफ्त, ओपन-सोर्स और बिना किसी विज्ञापन के है। यदि आपको ऐप पसंद है, तो आप विकास का समर्थन दान करके कर सकते हैं।';
-  @override
-  String donate({required Object amount}) => 'दान करें ${amount}';
-  @override
-  String get thanks => 'आपका हार्दिक धन्यवाद!';
-  @override
-  String get restore => 'खरीदारी पुनर्स्थापित करें';
 }
 
 // Path: changelogPage
@@ -1056,10 +1035,6 @@ class _Translations$settingsTab$other$hi extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'अन्य';
-  @override
-  String get support => 'LocalSend का समर्थन करें';
-  @override
-  String get donate => 'दान करें';
   @override
   String get privacyPolicy => 'गोपनीयता नीति';
   @override

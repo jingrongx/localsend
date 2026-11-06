@@ -78,8 +78,6 @@ class TranslationsKm extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$km aboutPage = _Translations$aboutPage$km._(_root);
   @override
-  late final _Translations$donationPage$km donationPage = _Translations$donationPage$km._(_root);
-  @override
   late final _Translations$changelogPage$km changelogPage = _Translations$changelogPage$km._(_root);
   @override
   late final _Translations$whatsNewPage$km whatsNewPage = _Translations$whatsNewPage$km._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$km extends Translations$aboutPage$en {
   String get packagers => 'អ្នកបង្កើតកញ្ចប់កម្មវិធី Package';
   @override
   String get translators => 'អ្នកបកប្រែ';
-}
-
-// Path: donationPage
-class _Translations$donationPage$km extends Translations$donationPage$en {
-  _Translations$donationPage$km._(TranslationsKm root) : this._root = root, super.internal(root);
-
-  final TranslationsKm _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'ការឧបត្ថម្ភ';
-  @override
-  String get info =>
-      'LocalSend ជាកម្មវិធីដែលឥតគិតថ្លៃ, បើកបង្ហាញប្រភពកូដជាសាធារណៈ និងមិនមានការបង្ហាញនូវផ្ទាំងពាណិជ្ជកម្មរំខានឡើយ។ ប្រសិនបើអ្នកពេញចិត្តកម្មវិធីនេះ​ និងចង់ជួយពួកយើង, អ្នកអាចចូលរួមលើកស្ទួយការអភិវឌ្ឍន៍កម្មវិធីនេះជាមួយពួកយើងតាមរយៈការឧបត្ថម្ភជាថវិកា។';
-  @override
-  String donate({required Object amount}) => 'ឧបត្ថម្ភចំនួន ${amount}';
-  @override
-  String get thanks => 'អរគុណអ្នកខ្លាំងណាស់សម្រាប់ការឧបត្ថម្ភមកកាន់ពួកយើង!';
-  @override
-  String get restore => 'ស្តារការទូទាត់ត្រឡប់មកវិញ';
 }
 
 // Path: changelogPage
@@ -1057,10 +1035,6 @@ class _Translations$settingsTab$other$km extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'ផ្សេងៗ';
-  @override
-  String get support => 'ជួយគាំទ្រ LocalSend';
-  @override
-  String get donate => 'ការឧបត្ថម្ភ';
   @override
   String get privacyPolicy => 'ច្បាប់ស្តីអំពីឯកជនភាព';
   @override

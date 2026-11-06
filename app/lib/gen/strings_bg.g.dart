@@ -78,8 +78,6 @@ class TranslationsBg extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$bg aboutPage = _Translations$aboutPage$bg._(_root);
   @override
-  late final _Translations$donationPage$bg donationPage = _Translations$donationPage$bg._(_root);
-  @override
   late final _Translations$changelogPage$bg changelogPage = _Translations$changelogPage$bg._(_root);
   @override
   late final _Translations$whatsNewPage$bg whatsNewPage = _Translations$whatsNewPage$bg._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$bg extends Translations$aboutPage$en {
   String get translators => 'Преводачи';
 }
 
-// Path: donationPage
-class _Translations$donationPage$bg extends Translations$donationPage$en {
-  _Translations$donationPage$bg._(TranslationsBg root) : this._root = root, super.internal(root);
-
-  final TranslationsBg _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Дарение';
-  @override
-  String get info =>
-      'LocalSend е безплатен, с отворен код и без никакви реклами. Ако харесвате приложението, можете да подкрепите разработката с дарение.';
-  @override
-  String donate({required Object amount}) => 'Дарение ${amount}';
-  @override
-  String get thanks => 'Благодаря много!';
-  @override
-  String get restore => 'Възстановяване на покупка';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$bg extends Translations$changelogPage$en {
   _Translations$changelogPage$bg._(TranslationsBg root) : this._root = root, super.internal(root);
@@ -972,10 +950,6 @@ class _Translations$settingsTab$other$bg extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Други';
-  @override
-  String get support => 'Поддръжка на LocalSend';
-  @override
-  String get donate => 'Дарение';
   @override
   String get privacyPolicy => 'Политика за поверителност';
   @override

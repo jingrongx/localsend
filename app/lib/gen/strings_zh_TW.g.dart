@@ -78,8 +78,6 @@ class TranslationsZhTw extends Translations with BaseTranslations<AppLocale, Tra
   @override
   late final Translations$aboutPage$zh_TW aboutPage = Translations$aboutPage$zh_TW.internal(_root);
   @override
-  late final Translations$donationPage$zh_TW donationPage = Translations$donationPage$zh_TW.internal(_root);
-  @override
   late final Translations$changelogPage$zh_TW changelogPage = Translations$changelogPage$zh_TW.internal(_root);
   @override
   late final Translations$whatsNewPage$zh_TW whatsNewPage = Translations$whatsNewPage$zh_TW.internal(_root);
@@ -532,25 +530,6 @@ class Translations$aboutPage$zh_TW extends Translations$aboutPage$en {
   String get translators => '翻譯人員';
 }
 
-// Path: donationPage
-class Translations$donationPage$zh_TW extends Translations$donationPage$en {
-  Translations$donationPage$zh_TW.internal(TranslationsZhTw root) : this._root = root, super.internal(root);
-
-  final TranslationsZhTw _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => '贊助';
-  @override
-  String get info => 'LocalSend 是免費、開源且沒有任何廣告的。如果您喜歡此應用程式，可以透過捐贈來支持開發。';
-  @override
-  String donate({required Object amount}) => '贊助 ${amount}';
-  @override
-  String get thanks => '非常感謝您！';
-  @override
-  String get restore => '復原購買';
-}
-
 // Path: changelogPage
 class Translations$changelogPage$zh_TW extends Translations$changelogPage$en {
   Translations$changelogPage$zh_TW.internal(TranslationsZhTw root) : this._root = root, super.internal(root);
@@ -974,10 +953,6 @@ class Translations$settingsTab$other$zh_TW extends Translations$settingsTab$othe
   // Translations
   @override
   String get title => '其他';
-  @override
-  String get support => '支持 LocalSend';
-  @override
-  String get donate => '贊助';
   @override
   String get privacyPolicy => '隱私權政策';
   @override

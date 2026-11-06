@@ -78,8 +78,6 @@ class TranslationsFi extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$fi aboutPage = _Translations$aboutPage$fi._(_root);
   @override
-  late final _Translations$donationPage$fi donationPage = _Translations$donationPage$fi._(_root);
-  @override
   late final _Translations$changelogPage$fi changelogPage = _Translations$changelogPage$fi._(_root);
   @override
   late final _Translations$whatsNewPage$fi whatsNewPage = _Translations$whatsNewPage$fi._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$fi extends Translations$aboutPage$en {
   String get packagers => 'Pakkaajat';
   @override
   String get translators => 'Kääntäjät';
-}
-
-// Path: donationPage
-class _Translations$donationPage$fi extends Translations$donationPage$en {
-  _Translations$donationPage$fi._(TranslationsFi root) : this._root = root, super.internal(root);
-
-  final TranslationsFi _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Lahjoita';
-  @override
-  String get info =>
-      'LocalSend on ilmainen, avoimen lähdekoodin sovellus ilman mainoksia. Voit tukea projektia lahjoituksella, jos pidät sovelluksesta.';
-  @override
-  String donate({required Object amount}) => 'Lahjoita ${amount}';
-  @override
-  String get thanks => 'Suuret kiitokset!';
-  @override
-  String get restore => 'Palauta ostos';
 }
 
 // Path: changelogPage
@@ -1064,10 +1042,6 @@ class _Translations$settingsTab$other$fi extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Muut';
-  @override
-  String get support => 'Tue LocalSendia';
-  @override
-  String get donate => 'Lahjoita';
   @override
   String get privacyPolicy => 'Tietosuojakäytäntö';
   @override

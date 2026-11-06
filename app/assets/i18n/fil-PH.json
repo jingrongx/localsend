@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Iba Pa",
-      "support": "Suportahan ang LocalSend",
-      "donate": "Mag-donate",
       "privacyPolicy": "Patakaran sa Privacy",
       "termsOfUse": "Mga Tuntunin sa Paggamit"
     },
@@ -309,13 +307,6 @@
     "contributors": "Mga Contributor",
     "packagers": "Mga Packagers",
     "translators": "Mga Translator"
-  },
-  "donationPage": {
-    "title": "Mag-donate",
-    "info": "Ang LocalSend ay libre, open-source, at walang anumang mga ad. Kung iyong nagustuhan ang app, maaari mong suportahan ang development sa pamamagitan ng donasyon.",
-    "donate": "Mag-donate ng {amount}",
-    "thanks": "Maraming salamat!",
-    "restore": "Restore purchase"
   },
   "changelogPage": {
     "title": "Changelog"

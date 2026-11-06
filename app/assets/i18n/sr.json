@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Ostalo",
-      "support": "Podržite LocalSend",
-      "donate": "Doniraj",
       "privacyPolicy": "Politika privatnosti",
       "termsOfUse": "Uslovi korišćenja"
     },
@@ -309,13 +307,6 @@
     "contributors": "Saradnici",
     "packagers": "Pakeri",
     "translators": "Prevodioci"
-  },
-  "donationPage": {
-    "title": "Donacija",
-    "info": "LocalSend je besplatan, otvorenog koda i bez ikakvih oglasa. Ako vam se sviđa aplikacija, možete podržati razvoj donacijom.",
-    "donate": "Doniraj {amount}",
-    "thanks": "Hvala vam puno!",
-    "restore": "Vrati kupovinu"
   },
   "changelogPage": {
     "title": "Evidencija promena"

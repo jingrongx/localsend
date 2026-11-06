@@ -10,7 +10,6 @@ import 'package:localsend_app/config/refena.dart';
 import 'package:localsend_app/config/theme.dart';
 import 'package:localsend_app/pages/home_page.dart';
 import 'package:localsend_app/pages/home_page_controller.dart';
-import 'package:localsend_app/pages/whats_new_page.dart';
 import 'package:localsend_app/provider/animation_provider.dart';
 import 'package:localsend_app/provider/app_arguments_provider.dart';
 import 'package:localsend_app/provider/device_info_provider.dart';
@@ -18,13 +17,10 @@ import 'package:localsend_app/provider/network/nearby_devices_provider.dart';
 import 'package:localsend_app/provider/network/server/server_provider.dart';
 import 'package:localsend_app/provider/network/webrtc/signaling_provider.dart';
 import 'package:localsend_app/provider/persistence_provider.dart';
-// [FOSS_REMOVE_START]
-import 'package:localsend_app/provider/purchase_provider.dart';
-// [FOSS_REMOVE_END]
 import 'package:localsend_app/provider/selection/selected_sending_files_provider.dart';
 import 'package:localsend_app/provider/settings_provider.dart';
 import 'package:localsend_app/provider/tv_provider.dart';
-import 'package:localsend_app/provider/version_provider.dart';
+import 'package:localsend_app/provider/update/update_provider.dart';
 import 'package:localsend_app/provider/window_dimensions_provider.dart';
 import 'package:localsend_app/util/i18n.dart';
 import 'package:localsend_app/util/native/autostart_helper.dart';
@@ -309,24 +305,19 @@ Future<void> postInit(BuildContext context, Ref ref, bool appStart) async {
     ref.global.dispatchAsync(ClearCacheAction()); // ignore: unawaited_futures
   }
 
-  if (!ref.read(persistenceProvider).isFirstAppStart) {
-    WhatsNewPage? whatsNew = WhatsNewPage.fromLastVersion(lastVersion: ref.read(persistenceProvider).getWhatsNew());
-    if (whatsNew != null) {
-      // ignore: unawaited_futures
-      ref.global.dispatchAsync(NavigateAction.push(whatsNew));
-    }
-  }
+  // ignore: unawaited_futures
+  _dispatchStartupUpdateCheck(ref);
+}
 
-  await ref.future(versionProvider).then((version) async {
-    await ref.read(persistenceProvider).setWhatsNew(version.version);
-  });
-
-  // [FOSS_REMOVE_START]
-  if (checkPlatformSupportPayment()) {
-    // ignore: unawaited_futures
-    ref.redux(purchaseProvider).dispatchAsync(InitPurchaseStream());
+/// Fire-and-forget: checks GitHub for a new release on app start (Android only).
+Future<void> _dispatchStartupUpdateCheck(Ref ref) async {
+  if (!checkPlatform([TargetPlatform.android])) {
+    return;
   }
-  // [FOSS_REMOVE_END]
+  if (!ref.read(settingsProvider).autoCheckUpdates) {
+    return;
+  }
+  await ref.notifier(updateProvider).autoCheck();
 }
 
 class _HandleShareIntentAction extends AsyncGlobalAction {

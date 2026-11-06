@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:localsend_app/gen/strings.g.dart';
 import 'package:localsend_app/util/native/file_picker.dart';
 import 'package:localsend_app/util/native/platform_check.dart';
+import 'package:localsend_app/util/navigation_compat.dart';
 import 'package:localsend_app/widget/big_button.dart';
 import 'package:localsend_app/widget/dialogs/custom_bottom_sheet.dart';
-import 'package:refena_flutter/addons.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 import 'package:routerino/routerino.dart';
 
@@ -66,7 +66,7 @@ class AddFileDialog extends StatelessWidget {
             onTap: () async {
               final ref = context.ref;
               await ref.global.dispatchAsync(PickFileAction(option: option, context: context));
-              ref.global.dispatch(NavigateAction.popUntilRoot());
+              ref.global.dispatch(NavigateActionCompat.popUntilRoot());
             },
           );
         }),

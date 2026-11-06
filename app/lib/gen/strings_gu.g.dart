@@ -78,8 +78,6 @@ class TranslationsGu extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$gu aboutPage = _Translations$aboutPage$gu._(_root);
   @override
-  late final _Translations$donationPage$gu donationPage = _Translations$donationPage$gu._(_root);
-  @override
   late final _Translations$changelogPage$gu changelogPage = _Translations$changelogPage$gu._(_root);
   @override
   late final _Translations$whatsNewPage$gu whatsNewPage = _Translations$whatsNewPage$gu._(_root);
@@ -533,25 +531,6 @@ class _Translations$aboutPage$gu extends Translations$aboutPage$en {
   String get packagers => 'પૅકેજકરતાં';
   @override
   String get translators => 'અનુવાદકો';
-}
-
-// Path: donationPage
-class _Translations$donationPage$gu extends Translations$donationPage$en {
-  _Translations$donationPage$gu._(TranslationsGu root) : this._root = root, super.internal(root);
-
-  final TranslationsGu _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'દાન આપો';
-  @override
-  String get info => 'લોકલસેન્ડ મફત, ઓપન-સોર્સ છે અને તેમાં કોઈ જ જાહેરાતો નથી. જો તમને એપ ગમે, તો તમે દાન દ્વારા વિકાસને સપોર્ટ કરી શકો છો.';
-  @override
-  String donate({required Object amount}) => 'દાન આપો ${amount}';
-  @override
-  String get thanks => 'તમારો ખુબ ખુબ આભાર!';
-  @override
-  String get restore => 'ખરીદી પુનઃસ્થાપિત કરો';
 }
 
 // Path: changelogPage
@@ -1055,10 +1034,6 @@ class _Translations$settingsTab$other$gu extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'અન્ય';
-  @override
-  String get support => 'લોકલસેન્ડને સપોર્ટ કરો';
-  @override
-  String get donate => 'દાન આપો';
   @override
   String get privacyPolicy => 'ગોપનીયતા નીતિ';
   @override

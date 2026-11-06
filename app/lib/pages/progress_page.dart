@@ -15,6 +15,7 @@ import 'package:localsend_app/util/native/open_file.dart';
 import 'package:localsend_app/util/native/open_folder.dart';
 import 'package:localsend_app/util/native/platform_check.dart';
 import 'package:localsend_app/util/native/taskbar_helper.dart';
+import 'package:localsend_app/util/navigation_compat.dart';
 import 'package:localsend_app/util/notification_strings.dart';
 import 'package:localsend_app/util/ui/nav_bar_padding.dart';
 import 'package:localsend_app/widget/custom_progress_bar.dart';
@@ -26,7 +27,6 @@ import 'package:localsend_isolates/model/file_status.dart';
 import 'package:localsend_isolates/model/session_status.dart';
 import 'package:localsend_isolates/util/file_size_helper.dart';
 import 'package:localsend_isolates/util/file_speed_helper.dart';
-import 'package:refena_flutter/addons.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 import 'package:routerino/routerino.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
@@ -145,9 +145,9 @@ class _ProgressPageState extends State<ProgressPage> with Refena {
 
     if (result && mounted) {
       if (ref.read(serverProvider)?.webUpload == true) {
-        context.global.dispatch(NavigateAction.popUntil<WebSharePage>());
+        context.global.dispatch(NavigateActionCompat.popUntil<WebSharePage>());
       } else {
-        context.global.dispatch(NavigateAction.popUntilRoot());
+        context.global.dispatch(NavigateActionCompat.popUntilRoot());
       }
     }
   }
@@ -214,9 +214,9 @@ class _ProgressPageState extends State<ProgressPage> with Refena {
           return;
         }
         if (ref.read(serverProvider)?.webUpload == true) {
-          context.global.dispatch(NavigateAction.popUntil<WebSharePage>());
+          context.global.dispatch(NavigateActionCompat.popUntil<WebSharePage>());
         } else {
-          context.global.dispatch(NavigateAction.popUntilRoot());
+          context.global.dispatch(NavigateActionCompat.popUntilRoot());
         }
       });
       return Scaffold(

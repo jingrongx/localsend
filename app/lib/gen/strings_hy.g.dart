@@ -78,8 +78,6 @@ class TranslationsHy extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$hy aboutPage = _Translations$aboutPage$hy._(_root);
   @override
-  late final _Translations$donationPage$hy donationPage = _Translations$donationPage$hy._(_root);
-  @override
   late final _Translations$changelogPage$hy changelogPage = _Translations$changelogPage$hy._(_root);
   @override
   late final _Translations$whatsNewPage$hy whatsNewPage = _Translations$whatsNewPage$hy._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$hy extends Translations$aboutPage$en {
   String get packagers => 'Փաթեթավորողներ';
   @override
   String get translators => 'Թարգմանիչներ';
-}
-
-// Path: donationPage
-class _Translations$donationPage$hy extends Translations$donationPage$en {
-  _Translations$donationPage$hy._(TranslationsHy root) : this._root = root, super.internal(root);
-
-  final TranslationsHy _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Նվիրաբերել';
-  @override
-  String get info =>
-      'LocalSend-ը անվճար է, բաց կոդով և առանց որևէ գովազդի: Եթե ​​ձեզ դուր է գալիս ծրագիրը, կարող եք աջակցել զարգացմանը նվիրաբերելով:';
-  @override
-  String donate({required Object amount}) => 'Նվիրաբերել ${amount}';
-  @override
-  String get thanks => 'Շա՜տ շնորհակալ ենք';
-  @override
-  String get restore => 'Վերականգնել գնումը';
 }
 
 // Path: changelogPage
@@ -1055,10 +1033,6 @@ class _Translations$settingsTab$other$hy extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Այլ';
-  @override
-  String get support => 'Աջակցել LocalSend-ին';
-  @override
-  String get donate => 'Նվիրաբերել';
   @override
   String get privacyPolicy => 'Գաղտնիության քաղաքականություն';
   @override

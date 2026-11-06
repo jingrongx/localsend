@@ -33,7 +33,6 @@ import 'package:shared_preferences/shared_preferences.dart' as _i15;
 // ignore_for_file: unnecessary_parenthesis
 // ignore_for_file: camel_case_types
 // ignore_for_file: subtype_of_sealed_class
-// ignore_for_file: invalid_use_of_internal_member
 
 class _FakeStoredSecurityContext_0 extends _i1.SmartFake implements _i2.StoredSecurityContext {
   _FakeStoredSecurityContext_0(Object parent, Invocation parentInvocation) : super(parent, parentInvocation);
@@ -471,6 +470,33 @@ class MockPersistenceService extends _i1.Mock implements _i4.PersistenceService 
           as _i5.Future<void>);
 
   @override
+  bool getAutoCheckUpdates() =>
+      (super.noSuchMethod(
+            Invocation.method(#getAutoCheckUpdates, []),
+            returnValue: false,
+            returnValueForMissingStub: false,
+          )
+          as bool);
+
+  @override
+  _i5.Future<void> setAutoCheckUpdates(bool? isEnabled) =>
+      (super.noSuchMethod(
+            Invocation.method(#setAutoCheckUpdates, [isEnabled]),
+            returnValue: _i5.Future<void>.value(),
+            returnValueForMissingStub: _i5.Future<void>.value(),
+          )
+          as _i5.Future<void>);
+
+  @override
+  _i5.Future<void> setUpdatePromptedVersion(String? version) =>
+      (super.noSuchMethod(
+            Invocation.method(#setUpdatePromptedVersion, [version]),
+            returnValue: _i5.Future<void>.value(),
+            returnValueForMissingStub: _i5.Future<void>.value(),
+          )
+          as _i5.Future<void>);
+
+  @override
   _i12.QuickSaveMode getQuickSave() =>
       (super.noSuchMethod(
             Invocation.method(#getQuickSave, []),
@@ -624,6 +650,24 @@ class MockPersistenceService extends _i1.Mock implements _i4.PersistenceService 
           as bool);
 
   @override
+  _i5.Future<void> setAlwaysOnTop(bool? alwaysOnTop) =>
+      (super.noSuchMethod(
+            Invocation.method(#setAlwaysOnTop, [alwaysOnTop]),
+            returnValue: _i5.Future<void>.value(),
+            returnValueForMissingStub: _i5.Future<void>.value(),
+          )
+          as _i5.Future<void>);
+
+  @override
+  bool getAlwaysOnTop() =>
+      (super.noSuchMethod(
+            Invocation.method(#getAlwaysOnTop, []),
+            returnValue: false,
+            returnValueForMissingStub: false,
+          )
+          as bool);
+
+  @override
   _i5.Future<void> setEnableAnimations(bool? enableAnimations) =>
       (super.noSuchMethod(
             Invocation.method(#setEnableAnimations, [enableAnimations]),
@@ -654,15 +698,6 @@ class MockPersistenceService extends _i1.Mock implements _i4.PersistenceService 
   _i5.Future<void> setDeviceModel(String? deviceModel) =>
       (super.noSuchMethod(
             Invocation.method(#setDeviceModel, [deviceModel]),
-            returnValue: _i5.Future<void>.value(),
-            returnValueForMissingStub: _i5.Future<void>.value(),
-          )
-          as _i5.Future<void>);
-
-  @override
-  _i5.Future<void> setWhatsNew(String? version) =>
-      (super.noSuchMethod(
-            Invocation.method(#setWhatsNew, [version]),
             returnValue: _i5.Future<void>.value(),
             returnValueForMissingStub: _i5.Future<void>.value(),
           )

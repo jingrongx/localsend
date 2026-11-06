@@ -78,8 +78,6 @@ class TranslationsBn extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$bn aboutPage = _Translations$aboutPage$bn._(_root);
   @override
-  late final _Translations$donationPage$bn donationPage = _Translations$donationPage$bn._(_root);
-  @override
   late final _Translations$changelogPage$bn changelogPage = _Translations$changelogPage$bn._(_root);
   @override
   late final _Translations$whatsNewPage$bn whatsNewPage = _Translations$whatsNewPage$bn._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$bn extends Translations$aboutPage$en {
   String get packagers => 'প্যাকেজেস';
   @override
   String get translators => 'অনুবাদক';
-}
-
-// Path: donationPage
-class _Translations$donationPage$bn extends Translations$donationPage$en {
-  _Translations$donationPage$bn._(TranslationsBn root) : this._root = root, super.internal(root);
-
-  final TranslationsBn _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'ডোনেট';
-  @override
-  String get info =>
-      'LocalSend ফ্রী, ওপেন সোর্স এবং কোনো অ্যাড ছাড়াই। আপনি যদি অ্যাপটি পছন্দ করেন তবে আপনি একটি ডোনেশন দিয়ে ডেভেলপমেন্টকে সাপোর্ট করতে পারেন।';
-  @override
-  String donate({required Object amount}) => 'ডোনেট ${amount}';
-  @override
-  String get thanks => 'আপনাকে অনেক ধন্যবাদ!';
-  @override
-  String get restore => 'পারচেজ রিস্টোর';
 }
 
 // Path: changelogPage
@@ -1057,10 +1035,6 @@ class _Translations$settingsTab$other$bn extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'অন্যান্য';
-  @override
-  String get support => 'লোকাল সেন্ডকে সাপোর্ট করুন';
-  @override
-  String get donate => 'ডোনেট';
   @override
   String get privacyPolicy => 'গোপনীয়তা নীতি';
   @override

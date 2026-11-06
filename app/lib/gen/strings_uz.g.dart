@@ -78,8 +78,6 @@ class TranslationsUz extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$uz aboutPage = _Translations$aboutPage$uz._(_root);
   @override
-  late final _Translations$donationPage$uz donationPage = _Translations$donationPage$uz._(_root);
-  @override
   late final _Translations$changelogPage$uz changelogPage = _Translations$changelogPage$uz._(_root);
   @override
   late final _Translations$whatsNewPage$uz whatsNewPage = _Translations$whatsNewPage$uz._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$uz extends Translations$aboutPage$en {
   String get translators => 'Tarjimonlar';
 }
 
-// Path: donationPage
-class _Translations$donationPage$uz extends Translations$donationPage$en {
-  _Translations$donationPage$uz._(TranslationsUz root) : this._root = root, super.internal(root);
-
-  final TranslationsUz _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Xayriya';
-  @override
-  String get info =>
-      'LocalSend bepul, ochiq manbali va reklamasiz. Agar ilova sizga yoqqan boʻlsa, xayriya bilan rivojlanishni qoʻllab-quvvatlashingiz mumkin.';
-  @override
-  String donate({required Object amount}) => '${amount} xayriya qilish';
-  @override
-  String get thanks => 'Katta rahmat!';
-  @override
-  String get restore => 'Xaridni tiklash';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$uz extends Translations$changelogPage$en {
   _Translations$changelogPage$uz._(TranslationsUz root) : this._root = root, super.internal(root);
@@ -972,10 +950,6 @@ class _Translations$settingsTab$other$uz extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Boshqa';
-  @override
-  String get support => 'LocalSendni qoʻllab-quvvatlash';
-  @override
-  String get donate => 'Xayriya';
   @override
   String get privacyPolicy => 'Maxfiylik siyosati';
   @override

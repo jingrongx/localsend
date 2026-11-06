@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Outros",
-      "support": "Apoia a LocalSend",
-      "donate": "Doar",
       "privacyPolicy": "Política de privacidade",
       "termsOfUse": "Condicións de uso"
     },
@@ -309,13 +307,6 @@
     "contributors": "Colaboradores",
     "packagers": "Empaquetadores",
     "translators": "Tradutores"
-  },
-  "donationPage": {
-    "title": "Doar",
-    "info": "LocalSen é gratuita, de código aberto e non ten anuncios. Se che gusta a aplicación, podes apoiar o desenvolvemento cunha doazón.",
-    "donate": "Doar {amount}",
-    "thanks": "Moitas grazas!",
-    "restore": "Restaurar a compra"
   },
   "changelogPage": {
     "title": "Rexistro de cambios"

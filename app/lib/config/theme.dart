@@ -136,7 +136,7 @@ extension ColorSchemeExt on ColorScheme {
   }
 }
 
-extension InputDecorationThemeExt on InputDecorationThemeData {
+extension InputDecorationThemeExt on InputDecorationTheme {
   BorderRadius get borderRadius => _borderRadius;
 }
 
@@ -175,8 +175,6 @@ ThemeData _getYaruTheme(Brightness brightness) {
     borderSide: BorderSide(color: colorScheme.secondaryContainer),
     borderRadius: _borderRadius,
   );
-
-  InputDecorationThemeData;
 
   return baseTheme.copyWith(
     // same density on all platforms so desktop matches mobile (defaults to compact on desktop)

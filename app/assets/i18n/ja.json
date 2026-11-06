@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "その他",
-      "support": "LocalSendを支援",
-      "donate": "寄付",
       "privacyPolicy": "プライバシーポリシー",
       "termsOfUse": "利用規約"
     },
@@ -309,13 +307,6 @@
     "contributors": "貢献者",
     "packagers": "パッケージ協力者",
     "translators": "翻訳者"
-  },
-  "donationPage": {
-    "title": "寄付",
-    "info": "LocalSendは無料かつオープンソースで、広告を一切含みません。もしアプリを気に入っていただけたら、寄付で開発を支援することができます。",
-    "donate": "{amount} 寄付する",
-    "thanks": "ありがとうございます！",
-    "restore": "購入を復元する"
   },
   "changelogPage": {
     "title": "更新履歴"

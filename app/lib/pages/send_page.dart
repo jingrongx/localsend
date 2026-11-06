@@ -11,6 +11,7 @@ import 'package:localsend_app/provider/file_transfer_provider.dart';
 import 'package:localsend_app/provider/network/send_provider.dart';
 import 'package:localsend_app/util/favorites.dart';
 import 'package:localsend_app/util/native/taskbar_helper.dart';
+import 'package:localsend_app/util/navigation_compat.dart';
 import 'package:localsend_app/widget/animations/initial_fade_transition.dart';
 import 'package:localsend_app/widget/animations/initial_slide_transition.dart';
 import 'package:localsend_app/widget/dialogs/error_dialog.dart';
@@ -18,7 +19,6 @@ import 'package:localsend_app/widget/list_tile/device_list_tile.dart';
 import 'package:localsend_app/widget/responsive_list_view.dart';
 import 'package:localsend_isolates/model/device.dart';
 import 'package:localsend_isolates/model/session_status.dart';
-import 'package:refena_flutter/addons.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 import 'package:routerino/routerino.dart';
 
@@ -241,7 +241,7 @@ class _SendPageState extends State<SendPage> with Refena {
                               child: FilledButton.icon(
                                 onPressed: () {
                                   _cancel();
-                                  context.global.dispatch(NavigateAction.popUntilRoot());
+                                  context.global.dispatch(NavigateActionCompat.popUntilRoot());
                                 },
                                 icon: Icon(waiting ? Icons.close : Icons.check_circle),
                                 label: Text(waiting ? t.general.cancel : t.general.close),

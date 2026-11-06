@@ -78,8 +78,6 @@ class TranslationsMs extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$ms aboutPage = _Translations$aboutPage$ms._(_root);
   @override
-  late final _Translations$donationPage$ms donationPage = _Translations$donationPage$ms._(_root);
-  @override
   late final _Translations$changelogPage$ms changelogPage = _Translations$changelogPage$ms._(_root);
   @override
   late final _Translations$whatsNewPage$ms whatsNewPage = _Translations$whatsNewPage$ms._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$ms extends Translations$aboutPage$en {
   String get packagers => 'Pembungkus';
   @override
   String get translators => 'Penterjemah';
-}
-
-// Path: donationPage
-class _Translations$donationPage$ms extends Translations$donationPage$en {
-  _Translations$donationPage$ms._(TranslationsMs root) : this._root = root, super.internal(root);
-
-  final TranslationsMs _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Derma';
-  @override
-  String get info =>
-      'LocalSend adalah percuma, sumber terbuka dan tanpa iklan. Jika anda menyukai aplikasi ini, anda boleh menyokong pembangunannya dengan derma.';
-  @override
-  String donate({required Object amount}) => 'Derma ${amount}';
-  @override
-  String get thanks => 'Terima kasih banyak!';
-  @override
-  String get restore => 'Pulihkan pembelian';
 }
 
 // Path: changelogPage
@@ -1054,10 +1032,6 @@ class _Translations$settingsTab$other$ms extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Lain-lain';
-  @override
-  String get support => 'Sokong LocalSend';
-  @override
-  String get donate => 'Derma';
   @override
   String get privacyPolicy => 'Dasar Privasi';
   @override

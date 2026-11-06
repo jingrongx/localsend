@@ -78,8 +78,6 @@ class TranslationsUk extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$uk aboutPage = _Translations$aboutPage$uk._(_root);
   @override
-  late final _Translations$donationPage$uk donationPage = _Translations$donationPage$uk._(_root);
-  @override
   late final _Translations$changelogPage$uk changelogPage = _Translations$changelogPage$uk._(_root);
   @override
   late final _Translations$whatsNewPage$uk whatsNewPage = _Translations$whatsNewPage$uk._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$uk extends Translations$aboutPage$en {
   String get translators => 'Перекладачі';
 }
 
-// Path: donationPage
-class _Translations$donationPage$uk extends Translations$donationPage$en {
-  _Translations$donationPage$uk._(TranslationsUk root) : this._root = root, super.internal(root);
-
-  final TranslationsUk _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Пожертвувати';
-  @override
-  String get info =>
-      'LocalSend — це безплатна програма з відкритим вихідним кодом та без реклами. Якщо вона вам подобається, ви можете підтримати її розробку пожертвою.';
-  @override
-  String donate({required Object amount}) => 'Пожертвувати ${amount}';
-  @override
-  String get thanks => 'Велике спасибі!';
-  @override
-  String get restore => 'Відновити покупку';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$uk extends Translations$changelogPage$en {
   _Translations$changelogPage$uk._(TranslationsUk root) : this._root = root, super.internal(root);
@@ -972,10 +950,6 @@ class _Translations$settingsTab$other$uk extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Інше';
-  @override
-  String get support => 'Підтримати LocalSend';
-  @override
-  String get donate => 'Пожертвувати';
   @override
   String get privacyPolicy => 'Політика конфіденційності';
   @override

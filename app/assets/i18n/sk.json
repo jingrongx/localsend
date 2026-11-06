@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Iné",
-      "support": "Podporte LocalSend",
-      "donate": "Darovať",
       "privacyPolicy": "Zásady ochrany osobných údajov",
       "termsOfUse": "Podmienky používania"
     },
@@ -309,13 +307,6 @@
     "contributors": "Prispievatelia",
     "packagers": "Zostavovatelia balíkov",
     "translators": "Prekladatelia"
-  },
-  "donationPage": {
-    "title": "Darovať",
-    "info": "LocalSend je bezplatný, s otvoreným kódom a bez reklám. Ak sa vám aplikácia páči, môžete jej vývoj podporiť darom.",
-    "donate": "Darovať {amount}",
-    "thanks": "Ďakujeme veľmi pekne!",
-    "restore": "Obnoviť nákup"
   },
   "changelogPage": {
     "title": "Zoznam zmien"

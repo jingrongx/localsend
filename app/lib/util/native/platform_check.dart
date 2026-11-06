@@ -2,7 +2,7 @@ import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-const _platformChannel = MethodChannel('org.localsend.localsend_app/platform');
+const _platformChannel = MethodChannel('io.github.jingrongx.localsend/platform');
 bool _isWayland = Platform.environment['XDG_SESSION_TYPE'] == 'wayland';
 
 Future<bool> isWaylandDisplay() async {
@@ -58,9 +58,4 @@ bool checkPlatformWithFileSystem() {
 /// Convenience function to check if the app is not running on a Linux device with the Wayland display manager
 bool checkPlatformIsNotWaylandDesktop() {
   return !checkPlatform([TargetPlatform.linux]) || !_isWayland;
-}
-
-/// This platform supports payment (in-app purchase)
-bool checkPlatformSupportPayment() {
-  return checkPlatform([TargetPlatform.android, TargetPlatform.iOS, TargetPlatform.macOS]);
 }

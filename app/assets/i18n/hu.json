@@ -152,8 +152,6 @@
     },
     "other": {
       "title": "Egyéb",
-      "support": "LocalSend támogatás",
-      "donate": "Adomány",
       "privacyPolicy": "Adatvédelmi irányelvek",
       "termsOfUse": "Használati feltételek"
     },
@@ -309,13 +307,6 @@
     "contributors": "Közreműködők",
     "packagers": "Csomagolók",
     "translators": "Fordítók"
-  },
-  "donationPage": {
-    "title": "Adomány",
-    "info": "A LocalSend ingyenes, nyílt forráskódú és hirdetések nélküli. Ha megtetszett az alkalmazás, adományával támogathatja a fejlesztést.",
-    "donate": "Adomány {amount}",
-    "thanks": "Köszönöm szépen!",
-    "restore": "Vásárlás visszaállítása"
   },
   "changelogPage": {
     "title": "Változásnapló"

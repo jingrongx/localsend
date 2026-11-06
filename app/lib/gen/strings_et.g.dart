@@ -78,8 +78,6 @@ class TranslationsEt extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$et aboutPage = _Translations$aboutPage$et._(_root);
   @override
-  late final _Translations$donationPage$et donationPage = _Translations$donationPage$et._(_root);
-  @override
   late final _Translations$changelogPage$et changelogPage = _Translations$changelogPage$et._(_root);
   @override
   late final _Translations$whatsNewPage$et whatsNewPage = _Translations$whatsNewPage$et._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$et extends Translations$aboutPage$en {
   String get translators => 'Tõlkijad';
 }
 
-// Path: donationPage
-class _Translations$donationPage$et extends Translations$donationPage$en {
-  _Translations$donationPage$et._(TranslationsEt root) : this._root = root, super.internal(root);
-
-  final TranslationsEt _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Toeta meid rahaliselt';
-  @override
-  String get info =>
-      'LocalSend põhineb avatud lähtekoodil, on kõikide jaoks vaba ning tasuta kasutatav, ega sisalda reklaame. Kui sulle see rakendus meeldib, siis palun toeta meie arendust.';
-  @override
-  String donate({required Object amount}) => 'Anneta ${amount}';
-  @override
-  String get thanks => 'Suur tänu!';
-  @override
-  String get restore => 'Taasta ost';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$et extends Translations$changelogPage$en {
   _Translations$changelogPage$et._(TranslationsEt root) : this._root = root, super.internal(root);
@@ -972,10 +950,6 @@ class _Translations$settingsTab$other$et extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Muu teave';
-  @override
-  String get support => 'Toeta LocalSendi';
-  @override
-  String get donate => 'Toeta rahaliselt';
   @override
   String get privacyPolicy => 'Andmekaitsepõhimõtted';
   @override

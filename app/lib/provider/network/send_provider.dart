@@ -14,6 +14,7 @@ import 'package:localsend_app/provider/file_transfer_provider.dart';
 import 'package:localsend_app/provider/http_provider.dart';
 import 'package:localsend_app/provider/selection/selected_sending_files_provider.dart';
 import 'package:localsend_app/provider/settings_provider.dart';
+import 'package:localsend_app/util/navigation_compat.dart';
 import 'package:localsend_app/widget/dialogs/pin_dialog.dart';
 import 'package:localsend_isolates/isolate.dart';
 import 'package:localsend_isolates/model/device.dart';
@@ -29,7 +30,6 @@ import 'package:localsend_isolates/util/rust.dart';
 import 'package:localsend_isolates/util/sleep.dart';
 import 'package:localsend_isolates/util/transfer_notification.dart';
 import 'package:logging/logging.dart';
-import 'package:refena_flutter/addons.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 import 'package:routerino/routerino.dart';
 import 'package:uri_content/uri_content.dart';
@@ -391,7 +391,7 @@ class SendNotifier extends Notifier<Map<String, SendSessionState>> {
         // a second HomePage attaches a second PageView to the shared PageController,
         // and removing routes without animation orphans a hero in flight.
         ref.redux(homePageControllerProvider).dispatch(ChangeTabAction(HomeTab.send));
-        ref.global.dispatch(NavigateAction.popUntilRoot());
+        ref.global.dispatch(NavigateActionCompat.popUntilRoot());
       }
 
       closeSession(sessionId);

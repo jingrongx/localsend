@@ -78,8 +78,6 @@ class TranslationsHu extends Translations with BaseTranslations<AppLocale, Trans
   @override
   late final _Translations$aboutPage$hu aboutPage = _Translations$aboutPage$hu._(_root);
   @override
-  late final _Translations$donationPage$hu donationPage = _Translations$donationPage$hu._(_root);
-  @override
   late final _Translations$changelogPage$hu changelogPage = _Translations$changelogPage$hu._(_root);
   @override
   late final _Translations$whatsNewPage$hu whatsNewPage = _Translations$whatsNewPage$hu._(_root);
@@ -533,26 +531,6 @@ class _Translations$aboutPage$hu extends Translations$aboutPage$en {
   String get translators => 'Fordítók';
 }
 
-// Path: donationPage
-class _Translations$donationPage$hu extends Translations$donationPage$en {
-  _Translations$donationPage$hu._(TranslationsHu root) : this._root = root, super.internal(root);
-
-  final TranslationsHu _root; // ignore: unused_field
-
-  // Translations
-  @override
-  String get title => 'Adomány';
-  @override
-  String get info =>
-      'A LocalSend ingyenes, nyílt forráskódú és hirdetések nélküli. Ha megtetszett az alkalmazás, adományával támogathatja a fejlesztést.';
-  @override
-  String donate({required Object amount}) => 'Adomány ${amount}';
-  @override
-  String get thanks => 'Köszönöm szépen!';
-  @override
-  String get restore => 'Vásárlás visszaállítása';
-}
-
 // Path: changelogPage
 class _Translations$changelogPage$hu extends Translations$changelogPage$en {
   _Translations$changelogPage$hu._(TranslationsHu root) : this._root = root, super.internal(root);
@@ -972,10 +950,6 @@ class _Translations$settingsTab$other$hu extends Translations$settingsTab$other$
   // Translations
   @override
   String get title => 'Egyéb';
-  @override
-  String get support => 'LocalSend támogatás';
-  @override
-  String get donate => 'Adomány';
   @override
   String get privacyPolicy => 'Adatvédelmi irányelvek';
   @override

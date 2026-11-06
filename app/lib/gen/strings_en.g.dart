@@ -43,8 +43,8 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 
   // Translations
 
-  /// en: 'LocalSend'
-  String get appName => 'LocalSend';
+  /// en: 'LocalSend X'
+  String get appName => 'LocalSend X';
 
   late final Translations$general$en general = Translations$general$en.internal(_root);
   late final Translations$receiveTab$en receiveTab = Translations$receiveTab$en.internal(_root);
@@ -64,7 +64,6 @@ class Translations with BaseTranslations<AppLocale, Translations> {
   late final Translations$webSharePage$en webSharePage = Translations$webSharePage$en.internal(_root);
   late final Translations$webReceivePage$en webReceivePage = Translations$webReceivePage$en.internal(_root);
   late final Translations$aboutPage$en aboutPage = Translations$aboutPage$en.internal(_root);
-  late final Translations$donationPage$en donationPage = Translations$donationPage$en.internal(_root);
   late final Translations$changelogPage$en changelogPage = Translations$changelogPage$en.internal(_root);
   late final Translations$whatsNewPage$en whatsNewPage = Translations$whatsNewPage$en.internal(_root);
   late final Translations$aliasGenerator$en aliasGenerator = Translations$aliasGenerator$en.internal(_root);
@@ -73,6 +72,7 @@ class Translations with BaseTranslations<AppLocale, Translations> {
   late final Translations$tray$en tray = Translations$tray$en.internal(_root);
   late final Translations$web$en web = Translations$web$en.internal(_root);
   late final Translations$assetPicker$en assetPicker = Translations$assetPicker$en.internal(_root);
+  late final Translations$update$en update = Translations$update$en.internal(_root);
 }
 
 // Path: general
@@ -603,41 +603,14 @@ class Translations$aboutPage$en {
     'This app is available on Android, iOS, macOS, Windows and Linux. You can find all download options on the official homepage.',
   ];
 
-  /// en: 'Author'
-  String get author => 'Author';
+  /// en: 'Upstream project: LocalSend (Apache-2.0)'
+  String get upstreamProject => 'Upstream project: LocalSend (Apache-2.0)';
 
-  /// en: 'Contributors'
-  String get contributors => 'Contributors';
+  /// en: 'License Notices'
+  String get licenseNotices => 'License Notices';
 
-  /// en: 'Packagers'
-  String get packagers => 'Packagers';
-
-  /// en: 'Translators'
-  String get translators => 'Translators';
-}
-
-// Path: donationPage
-class Translations$donationPage$en {
-  Translations$donationPage$en.internal(this._root);
-
-  final Translations _root; // ignore: unused_field
-
-  // Translations
-
-  /// en: 'Donate'
-  String get title => 'Donate';
-
-  /// en: 'LocalSend is free, open-source and without any ads. If you like the app, you can support the development with a donation.'
-  String get info => 'LocalSend is free, open-source and without any ads. If you like the app, you can support the development with a donation.';
-
-  /// en: 'Donate {amount}'
-  String donate({required Object amount}) => 'Donate ${amount}';
-
-  /// en: 'Thank you very much!'
-  String get thanks => 'Thank you very much!';
-
-  /// en: 'Restore purchase'
-  String get restore => 'Restore purchase';
+  /// en: 'Debugging'
+  String get debugging => 'Debugging';
 }
 
 // Path: changelogPage
@@ -947,6 +920,54 @@ class Translations$assetPicker$en {
   String get sUnitAssetCountLabel => 'count';
 }
 
+// Path: update
+class Translations$update$en {
+  Translations$update$en.internal(this._root);
+
+  final Translations _root; // ignore: unused_field
+
+  // Translations
+
+  /// en: 'Update'
+  String get title => 'Update';
+
+  /// en: 'Check for updates automatically'
+  String get autoCheck => 'Check for updates automatically';
+
+  /// en: 'Check for updates'
+  String get checkForUpdates => 'Check for updates';
+
+  /// en: 'Checking for updates…'
+  String get checking => 'Checking for updates…';
+
+  /// en: 'You are using the latest version'
+  String get upToDate => 'You are using the latest version';
+
+  /// en: 'New version {version} available'
+  String newVersion({required Object version}) => 'New version ${version} available';
+
+  /// en: 'Release Notes'
+  String get releaseNotes => 'Release Notes';
+
+  /// en: 'Download update'
+  String get download => 'Download update';
+
+  /// en: 'Downloading… {progress}%'
+  String downloading({required Object progress}) => 'Downloading… ${progress}%';
+
+  /// en: 'Download complete, ready to install'
+  String get downloaded => 'Download complete, ready to install';
+
+  /// en: 'Install'
+  String get install => 'Install';
+
+  /// en: 'Update check failed. Check your network and try again.'
+  String get checkFailed => 'Update check failed. Check your network and try again.';
+
+  /// en: 'Retry'
+  String get retry => 'Retry';
+}
+
 // Path: receiveTab.infoBox
 class Translations$receiveTab$infoBox$en {
   Translations$receiveTab$infoBox$en.internal(this._root);
@@ -1229,12 +1250,6 @@ class Translations$settingsTab$other$en {
 
   /// en: 'Other'
   String get title => 'Other';
-
-  /// en: 'Support LocalSend'
-  String get support => 'Support LocalSend';
-
-  /// en: 'Donate'
-  String get donate => 'Donate';
 
   /// en: 'Privacy Policy'
   String get privacyPolicy => 'Privacy Policy';
