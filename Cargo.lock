@@ -1944,8 +1944,6 @@ dependencies = [
 [[package]]
 name = "if-addrs"
 version = "0.15.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c0a05c691e1fae256cf7013d99dad472dc52d5543322761f83ec8d47eab40d2b"
 dependencies = [
  "libc",
  "windows-sys 0.61.2",
@@ -4869,12 +4867,11 @@ dependencies = [
 [[package]]
 name = "webrtc-util"
 version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d1c0c7e0c8f280f2bbfae442701465777ac07adaf46ce0c5863cd58e13fe472a"
 dependencies = [
  "async-trait",
  "bitflags 1.3.2",
  "bytes",
+ "if-addrs",
  "ipnet",
  "lazy_static",
  "log",

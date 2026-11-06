@@ -7,6 +7,14 @@ members = [
     "server",
 ]
 
+# `getifaddrs(3)` only exists in bionic since API 24, and the import survives
+# linking, so the vendored copies enumerate interfaces via netlink on Android
+# and the library can load on Android 5.x/6.x. See
+# support/patches/*/README-PATCH.md.
+[patch.crates-io]
+if-addrs = { path = "support/patches/if-addrs" }
+webrtc-util = { path = "support/patches/webrtc-util" }
+
 # Profiles are only honored in the workspace root manifest.
 
 # Full debuginfo dominates target/ size; line tables keep backtraces usable.
