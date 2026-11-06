@@ -13,7 +13,7 @@ import 'package:refena_flutter/addons.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 
 /// The GitHub repository that publishes releases for this fork.
-const kUpdateRepo = 'jingrongx/localsend';
+const kUpdateRepo = 'jingrongx/localsendx';
 
 /// The file name prefix of the release APKs, e.g. "LocalSendX-1.2.3-android-arm64v8.apk".
 const kReleaseAssetPrefix = 'LocalSendX-';

@@ -4,8 +4,8 @@
   <img src="app/assets/img/logo-512.png" alt="LocalSend X logo" width="160"/>
 </p>
 
-[![CI](https://github.com/jingrongx/localsend/actions/workflows/ci.yml/badge.svg)](https://github.com/jingrongx/localsend/actions/workflows/ci.yml)
-[![Release](https://github.com/jingrongx/localsend/actions/workflows/release.yml/badge.svg)](https://github.com/jingrongx/localsend/actions/workflows/release.yml)
+[![CI](https://github.com/jingrongx/localsendx/actions/workflows/ci.yml/badge.svg)](https://github.com/jingrongx/localsendx/actions/workflows/ci.yml)
+[![Release](https://github.com/jingrongx/localsendx/actions/workflows/release.yml/badge.svg)](https://github.com/jingrongx/localsendx/actions/workflows/release.yml)
 
 **LocalSend X** 是 [LocalSend](https://github.com/localsend/localsend)（Apache-2.0）的独立分支，聚焦 Android 平台，专为老旧设备与电视盒子优化。
 
@@ -17,7 +17,7 @@
 
 ## 下载
 
-前往 [**Releases**](https://github.com/jingrongx/localsend/releases) 下载最新 APK：
+前往 [**Releases**](https://github.com/jingrongx/localsendx/releases) 下载最新 APK：
 
 | 文件名后缀 | 适用设备 |
 |-----------|---------|
@@ -34,7 +34,7 @@
 工具链：Flutter **3.32.8**（见 `.fvmrc`）、JDK 17、Rust stable（版本由 `rust-toolchain.toml` 钉住）、Android SDK（NDK 随构建自动选择）。
 
 ```bash
-git clone --recurse-submodules https://github.com/jingrongx/localsend.git
+git clone --recurse-submodules https://github.com/jingrongx/localsendx.git
 cd localsend
 fvm install                 # 按 .fvmrc 安装 Flutter 3.32.8
 fvm flutter pub get         # 在仓库根目录执行（pub workspace）

@@ -136,7 +136,7 @@ One socket is bound per interface IPv4 address (`SO_REUSEPORT`/`SO_REUSEADDR` + 
 
 ### In-app updates
 
-`app/lib/provider/update/` checks `https://api.github.com/repos/jingrongx/localsend/releases/latest`. Auto-check on startup is a settings toggle (`autoCheckUpdates`); a manual check lives in the settings tab. New versions are downloaded automatically and installed via `app/lib/util/native/open_file.dart` (which requests `REQUEST_INSTALL_PACKAGES`). Update UI strings live under the `update` i18n key.
+`app/lib/provider/update/` checks `https://api.github.com/repos/jingrongx/localsendx/releases/latest`. Auto-check on startup is a settings toggle (`autoCheckUpdates`); a manual check lives in the settings tab. New versions are downloaded automatically and installed via `app/lib/util/native/open_file.dart` (which requests `REQUEST_INSTALL_PACKAGES`). Update UI strings live under the `update` i18n key.
 
 ### i18n
 

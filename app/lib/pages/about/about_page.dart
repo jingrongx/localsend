@@ -30,7 +30,7 @@ class AboutPage extends StatelessWidget {
             children: [
               TextButton(
                 onPressed: () async {
-                  await launchUrl(Uri.parse('https://github.com/jingrongx/localsend'), mode: LaunchMode.externalApplication);
+                  await launchUrl(Uri.parse('https://github.com/jingrongx/localsendx'), mode: LaunchMode.externalApplication);
                 },
                 child: const Text('GitHub'),
               ),
