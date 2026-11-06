@@ -25,3 +25,4 @@
 
 # Flutter android build output
 app/android/build/
+support/patches/*/target/

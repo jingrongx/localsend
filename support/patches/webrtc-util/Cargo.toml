@@ -129,3 +129,7 @@ features = [
 
 [target."cfg(target_os = \"android\")".dependencies.if-addrs]
 version = "0.15"
+
+# Allows standalone cargo commands on this vendored crate; ignored when
+# built as a dependency of the workspace.
+[workspace]

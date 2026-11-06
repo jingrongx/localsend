@@ -1,6 +1,10 @@
+#[cfg(target_os = "android")]
 use crate::ifaces::{Interface, Kind, NextHop};
 
+#[cfg(target_os = "android")]
 use std::io::Error;
+
+#[cfg(target_os = "android")]
 use std::net::SocketAddr;
 
 #[cfg(not(target_os = "android"))]
