@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Fixed the startup crash on Android 5.x/6.x (`cannot locate symbol "getifaddrs"`): network interfaces are now enumerated via netlink on Android instead of `getifaddrs(3)`, which only exists since Android 7.0 (API 24).
+- The `if-addrs` and `webrtc-util` Rust dependencies are patched locally under `support/patches/` to provide this.
+
 ## 1.0.0
 
 - Initial release of LocalSend X, an independent fork of LocalSend.
